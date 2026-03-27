@@ -167,8 +167,8 @@
 
   /* === 文章状态面板 === */
   #article-panel { background: var(--bg); }
-  .article-panel { max-width: 800px; margin: 0 auto; padding: 20px 16px; }
-  .article-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+  .article-panel { max-width: 100%; padding: 20px 24px; box-sizing: border-box; }
+  .article-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 20px; max-width: 480px; }
   .art-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 12px; text-align: center; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
   .art-stat:hover, .art-stat.active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
   .art-stat .n { font-size: 32px; font-weight: 700; line-height: 1; }
@@ -226,7 +226,7 @@
   <button class="filter-btn" data-filter="articles" onclick="setFilter('articles',this)">📋 文章</button>
 </div>
 
-<div class="main"><div id="article-panel" style="display:none;width:100%;overflow-y:auto;">
+<div class="main"><div id="article-panel" style="display:none;grid-column:1/-1;overflow-y:auto;">
   <div class="article-panel">
     <div class="article-stats">
       <div class="art-stat pending" id="art-card-pending" onclick="artFilter('pending_review')">
@@ -325,6 +325,8 @@ async function init() {
     document.getElementById('updatedAt').textContent = '更新于 ' + (data.updatedAt || '--');
     render();
     renderSidebar(data);
+    // 如果当前在文章Tab，重渲染
+    if (currentFilter === 'articles') renderArticles();
   } catch(e) {
     document.getElementById('feed').innerHTML = '<div class="empty"><div class="empty-icon">⚠️</div><div>数据加载失败</div></div>';
   }
@@ -336,14 +338,19 @@ function setFilter(f, btn) {
   const feed = document.getElementById('feed');
   const sidebar = document.querySelector('.sidebar');
   if (f === 'articles') {
-    ap.style.display = 'block';
-    feed.style.display = 'none';
-    document.querySelectorAll('.sidebar, #feed').forEach(el => el.style.display = 'none');
+    document.getElementById('article-panel').style.display = 'block';
+    document.getElementById('feed').style.display = 'none';
+    const sb = document.querySelector('.sidebar');
+    if (sb) sb.style.display = 'none';
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
     renderArticles();
     return;
   } else {
+    document.getElementById('article-panel').style.display = 'none';
+    document.getElementById('feed').style.display = '';
+    const sb = document.querySelector('.sidebar');
+    if (sb) sb.style.display = '';
     ap.style.display = 'none';
     feed.style.display = 'block';
     document.querySelectorAll('.sidebar, #feed').forEach(el => el.style.display = '');
