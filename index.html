@@ -90,7 +90,7 @@
   .card.p-strip-mid { border-left: 3px solid var(--yellow); }
   .card.p-strip-low { border-left: 3px solid var(--accent2); }
   .card-title { font-size: 15px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
-  .card-body { font-size: 13px; color: #aaaacc; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-body { font-size: 13px; color: #aaaacc; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; white-space: pre-line; }
   .card-footer { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
   .card-tag { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: var(--tag-bg); border: 1px solid var(--border); color: var(--muted); }
   .card-action { font-size: 11px; padding: 3px 10px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; transition: all 0.15s; }
@@ -355,11 +355,10 @@ function renderCard(item) {
   const source = item.source ? `<span class="card-source">来源：${item.source}</span>` : '';
   const timeStr = (item.date||'').slice(11,16) || '';
 
-  // 草稿卡片：缩略 + 展开全文+下载按钮
+    // 草稿卡片：缩略 + 展开全文+下载按钮
   if (item.category === 'draft') {
-    const preview = (item.body || '').slice(0, 200).replace(/</g,'&lt;').replace(/>/g,'&gt;');
-    const safeTitle = (item.title || '').replace(/'/g, "\\'");
-    const safeBody = (item.body || '').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,'\\n');
+    const idx = allItems.indexOf(item);
+    const preview = (item.body || '').replace(/\n/g,'\n').slice(0, 200);
     return `<div class="card ${pClass}">
       <div class="card-top">
         <div class="card-icon">${cat.icon}</div>
@@ -374,8 +373,8 @@ function renderCard(item) {
       ${item.body ? `<div class="card-body">${escHtml(preview)}${item.body.length>200?'…':''}</div>` : ''}
       <div class="card-footer">${tags}
         <div class="card-actions">
-          <button class="card-action primary" onclick="openDraft('${safeTitle}','${safeBody}')">📖 阅读全文</button>
-          <button class="card-action" onclick="downloadDraftInline('${safeTitle}','${safeBody}')">⬇ 下载</button>
+          <button class="card-action primary" onclick="openDraftByIdx(${idx})">📖 阅读全文</button>
+          <button class="card-action" onclick="downloadDraftByIdx(${idx})">⬇ 下载</button>
         </div>
       </div>
     </div>`;
@@ -445,13 +444,27 @@ function renderImageGrid(items) {
 }
 
 // ─── Draft Modal ──────────────────────────────────────────────────────────────
-function openDraft(title, bodyEncoded) {
-  _draftTitle = title;
-  _draftContent = bodyEncoded.replace(/\\n/g, '\n').replace(/\\'/g, "'").replace(/\\\\/g,'\\');
-  document.getElementById('draftModalTitle').textContent = title;
+function openDraftByIdx(idx) {
+  const item = allItems[idx];
+  if (!item) return;
+  _draftTitle = item.title || '';
+  _draftContent = item.body || '';
+  document.getElementById('draftModalTitle').textContent = _draftTitle;
   document.getElementById('draftModalContent').textContent = _draftContent;
   document.getElementById('draftModal').classList.add('open');
   document.body.style.overflow = 'hidden';
+}
+
+function downloadDraftByIdx(idx) {
+  const item = allItems[idx];
+  if (!item) return;
+  const content = item.body || '';
+  const blob = new Blob([content], {type: 'text/markdown;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (item.title || 'draft').replace(/[《》\s\/\\]/g, '_') + '.md';
+  a.click();
+  showToast('✅ 下载完成');
 }
 
 function closeDraftModal(e) {
@@ -461,15 +474,11 @@ function closeDraftModal(e) {
 }
 
 function downloadDraft() {
-  downloadDraftInline(_draftTitle, _draftContent, true);
-}
-
-function downloadDraftInline(title, body, alreadyDecoded) {
-  const content = alreadyDecoded ? body : body.replace(/\\n/g, '\n').replace(/\\'/g, "'").replace(/\\\\/g,'\\');
+  const content = _draftContent;
   const blob = new Blob([content], {type: 'text/markdown;charset=utf-8'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
-  a.download = (title || 'draft').replace(/[《》\s\/\\]/g, '_') + '.md';
+  a.download = (_draftTitle || 'draft').replace(/[《》\s\/\\]/g, '_') + '.md';
   a.click();
   showToast('✅ 下载完成');
 }
