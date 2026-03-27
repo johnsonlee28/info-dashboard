@@ -33,6 +33,15 @@ def add(category, title, body="", date=None, priority="low", tags=None, source=N
         "url": url,
     })
 
+
+# ─── 文章状态台账 ──────────────────────────────────────────────────────────
+def load_article_status():
+    status_file = f"{WORKSPACE}/memory/draft_status.json"
+    if not os.path.exists(status_file):
+        return {"articles": [], "_updated": "-"}
+    with open(status_file) as f:
+        return json.load(f)
+
 # ─── 1. 待办（从主 memory 提取未完成 [ ] ）───────────────────────────────
 def load_todos():
     memory_dir = f"{WORKSPACE}/memory"
@@ -271,6 +280,7 @@ output = {
     "updatedAt": now.strftime("%Y-%m-%d %H:%M GMT+8"),
     "total": len(items),
     "items": items,
+    "articles": load_article_status(),
     "agents": [
         {"name": "猫巴士", "role": "总调度", "status": "在线"},
         {"name": "笔杆子", "role": "写作", "status": "在线"},

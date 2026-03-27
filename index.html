@@ -164,6 +164,34 @@
     .filters { padding: 10px 14px; }
     .img-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   }
+
+  /* === 文章状态面板 === */
+  .article-panel { padding: 20px 24px; }
+  .article-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 20px; }
+  .art-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; text-align: center; cursor: pointer; transition: border-color .15s; }
+  .art-stat:hover, .art-stat.active { border-color: var(--accent); }
+  .art-stat .n { font-size: 26px; font-weight: 700; }
+  .art-stat .lb { font-size: 12px; color: var(--muted); margin-top: 2px; }
+  .art-stat.pending .n { color: var(--yellow); }
+  .art-stat.reviewed .n { color: var(--green); }
+  .art-stat.published .n { color: var(--accent2); }
+  .art-filter-bar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
+  .art-filter-btn { padding: 4px 14px; border-radius: 16px; border: 1px solid var(--border); background: transparent; color: var(--muted); font-size: 13px; cursor: pointer; transition: all .15s; }
+  .art-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .art-search { width: 100%; padding: 9px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14px; margin-bottom: 14px; outline: none; }
+  .art-search:focus { border-color: var(--accent); }
+  .art-table { background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
+  .art-table table { width: 100%; border-collapse: collapse; }
+  .art-table th { padding: 10px 14px; font-size: 11px; color: var(--muted); text-align: left; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: .5px; }
+  .art-table td { padding: 12px 14px; font-size: 14px; border-bottom: 1px solid var(--surface2); }
+  .art-table tr:last-child td { border-bottom: none; }
+  .art-table tr:hover td { background: var(--surface2); }
+  .art-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+  .art-badge.pending  { background: rgba(240,180,41,.15); color: var(--yellow); }
+  .art-badge.reviewed { background: rgba(76,175,136,.15); color: var(--green); }
+  .art-badge.published { background: rgba(91,164,245,.15); color: var(--accent2); }
+  .art-empty { text-align: center; padding: 36px; color: var(--muted); font-size: 14px; }
+
 </style>
 </head>
 <body>
@@ -182,6 +210,36 @@
   </div>
 </div>
 
+
+<div id="article-panel" style="display:none">
+  <div class="article-panel">
+    <div class="article-stats">
+      <div class="art-stat pending" id="art-card-pending" onclick="artFilter('pending_review')">
+        <div class="n" id="art-n-pending">0</div><div class="lb">🟡 待审核</div>
+      </div>
+      <div class="art-stat reviewed" id="art-card-reviewed" onclick="artFilter('reviewed')">
+        <div class="n" id="art-n-reviewed">0</div><div class="lb">✅ 已审核</div>
+      </div>
+      <div class="art-stat published" id="art-card-published" onclick="artFilter('published')">
+        <div class="n" id="art-n-published">0</div><div class="lb">🚀 已发布</div>
+      </div>
+    </div>
+    <div class="art-filter-bar">
+      <button class="art-filter-btn active" onclick="artFilter('all')">全部</button>
+      <button class="art-filter-btn" id="artbtn-pending" onclick="artFilter('pending_review')">🟡 待审核</button>
+      <button class="art-filter-btn" id="artbtn-reviewed" onclick="artFilter('reviewed')">✅ 已审核</button>
+      <button class="art-filter-btn" id="artbtn-published" onclick="artFilter('published')">🚀 已发布</button>
+    </div>
+    <input class="art-search" id="art-search" placeholder="搜索文章标题…" oninput="renderArticles()">
+    <div class="art-table">
+      <table>
+        <thead><tr><th>文章标题</th><th>状态</th><th>更新日期</th></tr></thead>
+        <tbody id="art-tbody"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
 <div class="filters">
   <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">全部</button>
   <button class="filter-btn" data-filter="intel" onclick="setFilter('intel',this)">📰 情报</button>
@@ -191,6 +249,7 @@
   <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">🤖 简报</button>
   <button class="filter-btn" data-filter="market" onclick="setFilter('market',this)">📊 市场</button>
   <button class="filter-btn" data-filter="image" onclick="setFilter('image',this)">🖼 图库</button>
+  <button class="filter-btn" data-filter="articles" onclick="setFilter('articles',this)">📋 文章</button>
 </div>
 
 <div class="main">
@@ -265,6 +324,8 @@ async function init() {
     const res = await fetch('data.json?t=' + Date.now());
     const data = await res.json();
     allItems = data.items || [];
+    window._articlesData = data.articles || {};
+    renderArticlePanel();
     document.getElementById('updatedAt').textContent = '更新于 ' + (data.updatedAt || '--');
     render();
     renderSidebar(data);
@@ -274,6 +335,23 @@ async function init() {
 }
 
 function setFilter(f, btn) {
+  // 文章面板切换
+  const ap = document.getElementById('article-panel');
+  const feed = document.getElementById('feed');
+  const sidebar = document.querySelector('.sidebar');
+  if (f === 'articles') {
+    ap.style.display = 'block';
+    feed.style.display = 'none';
+    if (sidebar) sidebar.style.display = 'none';
+    document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+    if (btn) btn.classList.add('active');
+    renderArticles();
+    return;
+  } else {
+    ap.style.display = 'none';
+    feed.style.display = 'block';
+    if (sidebar) sidebar.style.display = '';
+  }
   currentFilter = f;
   currentTag = null;
   document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
@@ -528,6 +606,64 @@ function renderSidebar(data) {
 }
 
 // ─── Utils ────────────────────────────────────────────────────────────────────
+
+// ===== 文章状态面板 =====
+let _artFilter = 'all';
+
+function renderArticlePanel() {
+  const data = window._articlesData || {};
+  const articles = data.articles || [];
+  const counts = { pending_review: 0, reviewed: 0, published: 0 };
+  articles.forEach(a => { if (counts[a.status] !== undefined) counts[a.status]++; });
+  document.getElementById('art-n-pending').textContent   = counts.pending_review;
+  document.getElementById('art-n-reviewed').textContent  = counts.reviewed;
+  document.getElementById('art-n-published').textContent = counts.published;
+}
+
+function artFilter(status) {
+  _artFilter = status;
+  document.querySelectorAll('.art-filter-btn').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.art-stat').forEach(c => c.classList.remove('active'));
+  if (status === 'all') {
+    document.querySelector('.art-filter-btn').classList.add('active');
+  } else {
+    const m = { pending_review: 'pending', reviewed: 'reviewed', published: 'published' };
+    const btn = document.getElementById('artbtn-' + m[status]);
+    const card = document.getElementById('art-card-' + m[status]);
+    if (btn) btn.classList.add('active');
+    if (card) card.classList.add('active');
+  }
+  renderArticles();
+}
+
+function renderArticles() {
+  const data = window._articlesData || {};
+  const articles = data.articles || [];
+  const query = (document.getElementById('art-search')?.value || '').trim().toLowerCase();
+  let list = articles;
+  if (_artFilter !== 'all') list = list.filter(a => a.status === _artFilter);
+  if (query) list = list.filter(a => a.title.toLowerCase().includes(query));
+  list = [...list].sort((a, b) => (b.updated_at || '').localeCompare(a.updated_at || ''));
+  const BADGE = {
+    pending_review: '<span class="art-badge pending">🟡 待审核</span>',
+    reviewed:       '<span class="art-badge reviewed">✅ 已审核</span>',
+    published:      '<span class="art-badge published">🚀 已发布</span>',
+  };
+  const tbody = document.getElementById('art-tbody');
+  if (!list.length) {
+    tbody.innerHTML = '<tr><td colspan="3"><div class="art-empty">暂无文章</div></td></tr>';
+    return;
+  }
+  tbody.innerHTML = list.map(a => `
+    <tr>
+      <td>《${escHtml(a.title)}》</td>
+      <td>${BADGE[a.status] || a.status}</td>
+      <td style="color:var(--muted);font-size:13px">${a.updated_at || '-'}</td>
+    </tr>
+  `).join('');
+}
+// ===========================
+
 function escHtml(str) {
   return (str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 }
