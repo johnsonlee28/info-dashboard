@@ -1,7 +1,273 @@
 {
-  "updatedAt": "2026-03-27 23:35 GMT+8",
-  "total": 97,
+  "updatedAt": "2026-03-28 00:00 GMT+8",
+  "total": 98,
   "items": [
+    {
+      "id": 98,
+      "category": "market",
+      "title": "BTC 链上数据快照",
+      "body": "资金费率：-- | 稳定币趋势：-- | 数据时间：2026-03-28",
+      "date": "2026-03-28T08:00",
+      "priority": "low",
+      "tags": [
+        "BTC",
+        "市场"
+      ],
+      "source": "btc-dashboard",
+      "url": "https://btc.zhixingshe.cc"
+    },
+    {
+      "id": 79,
+      "category": "idea",
+      "title": "🏦 Idea Bank (灵感银行)",
+      "body": "> **Last Updated:** 2026-03-26\n> **Source:** Twitter #IndieHacker #BuildInPublic + 国内年轻人话题监控 + 董事长会话沉淀\n> **更新规则:** 每天 08:10 自动追加新情报，直接归档排名，无需确认\n\n---",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 80,
+      "category": "idea",
+      "title": "🔄 选题闭环流程",
+      "body": "```\n每周一 → 猫巴士 从「待选」里挑1个推荐给董事长\n         → 董事长确认 → 状态改为「本周主推」\n         → Ghostwriter 起草公众号文章\n         → 董事长审核 → 发布\n         → Zhihu Specialist 改编知乎版本\n         → Librarian 将状态改为「已发布」\n```\n\n**每个项目的生命周期状态：*",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 81,
+      "category": "idea",
+      "title": "📌 本周主推 (2026-03-26 当前)",
+      "body": "> **《别焦虑了，你不需要学会所有AI工具》**\n> 状态：✍️ 写作中（笔杆子已出草稿，待算盘审核）\n> 金句：「焦虑的反面不是'全都学会'，是'找到一件，做到够用'」\n\n---",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 82,
+      "category": "idea",
+      "title": "📝 项目详情档案",
+      "body": "### 1. 🧾 ReceiptRoast 账单羞辱 ✅ 已发布\n- **线上火热度：** 月底账单焦虑是00后高频话题，小红书\"消费羞耻\"标签持续爆发\n- **国外源头：** TikTok账单羞辱文化，Z世代用self-roast解构消费焦虑\n- **痛点：** 月底看账单崩溃，传统记账App数据不扎心不改行为\n- **核心功能：** 上传支付宝/微信账单截图 → OCR识别 → 毒舌股评家风格",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 83,
+      "category": "idea",
+      "title": "2. 😩 内耗计量表 🟡 待选",
+      "body": "- **线上火热度：** 「精神内耗可视化」是2026年00后最热心理话题，小红书日均相关帖子10万+\n- **痛点：** 年轻人需要量化焦虑、给情绪贴标签作为减压方式\n- **核心功能：** 每天输入3句话 → AI输出今日内耗指数 + 内耗来源分析 + 一句「够了，下班吧」\n- **商业模式：** 免费基础版，Pro版提供「内耗周报」和「减压处方」\n- **300字简介路径：** `memor",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 84,
+      "category": "idea",
+      "title": "3. 💎 Anti-AI 写作助手 🟡 待选",
+      "body": "- **线上火热度：** AI检测工具在学生群体中持续升温，「去AI味」需求爆发\n- **痛点：** 用ChatGPT写东西，一眼被看出来\n- **核心功能：** 输入AI生成文本 → 注入口语/俚语/故意瑕疵 → 输出「人味版本」\n- **商业模式：** 按字数收费 / 月订阅",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 85,
+      "category": "idea",
+      "title": "4. 🏷️ 班味祛除生成器 🟡 待选",
+      "body": "- **线上火热度：** 「班味」是2026年小红书最高频词之一\n- **核心功能：** 输入今天上班有多难熬 → AI定制3分钟「去班味程序」\n- **制作难度极低：** 纯Prompt，1天可出Demo",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 86,
+      "category": "idea",
+      "title": "5. 💘 AI 僚机键盘 🟡 待选",
+      "body": "- **痛点：** 聊天卡壳，不知道怎么回\n- **核心功能：** 截图 → OCR识别 → 生成3个回复（幽默/深情/高冷）",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 87,
+      "category": "idea",
+      "title": "6. 📸 FitCheck 毒舌顾问 🟡 待选",
+      "body": "- **核心功能：** 拍照 → AI毒舌打分(1-10) → 具体修改建议",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 88,
+      "category": "idea",
+      "title": "7. 🤝 搭子匹配问卷生成器 🟡 待选",
+      "body": "- **核心功能：** 输入生活节奏和偏好 → AI生成精准「找搭子」帖子",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 89,
+      "category": "idea",
+      "title": "8. 📅 GhostCalendar 托词生成器 🟡 待选",
+      "body": "- **核心功能：** 输入要拒绝的事+对方身份 → 生成3条托词 + 透明度检测",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 90,
+      "category": "idea",
+      "title": "9. 🗺️ 行程去网红化助手 🟡 待选",
+      "body": "- **核心功能：** 输入城市 → AI专门推荐「没人发过的」本地路线",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 91,
+      "category": "idea",
+      "title": "10. 📊 SlideSpy 竞品PPT反向工程 🟡 待选",
+      "body": "- **核心功能：** 上传PPT → 提炼核心卖点/定价/竞争壁垒 → 批量对比矩阵",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 92,
+      "category": "idea",
+      "title": "11. 🧩 孩子跳步骤 vs 大人抄捷径 🟡 待选",
+      "body": "- **加入日期：** 2026-03-25\n- **董事长评价：** \"挺好，展开成内容\"\n- **核心洞察：** 孩子做数学题想跳步骤，和大人做副业想抄捷径，是同一件事\n- **可延伸方向：**\n  1. 数学系列：用孩子列竖式，聊\"过程可见\"的价值\n  2. AI副业系列：跳过验证直接开干，最后返工的真实代价\n  3. 通用底层逻辑：人为什么总想跳步骤？结果看得见，过程看不见价值\n- **系",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 93,
+      "category": "idea",
+      "title": "12. 😤 别焦虑了，你不需要学会所有AI工具 ✍️ 写作中",
+      "body": "- **加入日期：** 2026-03-26\n- **选题来源：** 赛道轮换\"情绪/心理\"（笔杆子自主选题）\n- **核心观点：** 73%的人对AI焦虑，但88%的焦虑来自社交比较而非实际威胁\n- **金句：** 「焦虑的反面不是'全都学会'，是'找到一件，做到够用'」\n- **草稿状态：** 约1100字，待算盘审核\n\n---",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 94,
+      "category": "idea",
+      "title": "📄 文章草稿索引",
+      "body": "| 文章标题 | 状态 | 草稿路径 | 创建日期 |\n| :--- | :--- | :--- | :--- |\n| 《我让 AI \"审判\"了上个月的账单，结果被骂哭了》| ✅ 已发布(blog) | `memory/drafts/2026-03-06_draft_receiptroast.md` | 2026-03-06 |\n| 内耗计量表·300字产品简介 | ✅ 备用 | `memory/",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 95,
+      "category": "idea",
+      "title": "✅ 已发布归档",
+      "body": "| 标题 | 平台 | 发布日期 |\n| :--- | :--- | :--- |\n| 《0薪水、0社保、24小时待命：揭秘我的\"硅基黑工厂\"》 | 公众号 | 2026-02 |\n| 《在这个快节奏的时代，我选择\"慢思考\"》 | 公众号 + 知乎 | 2026-03-03 |\n| 《别解释了，点亮\"他\"》 | 公众号 + 知乎 | 2026-03-05 |\n| 《我让 AI \"审判\"了上个月的账",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 96,
+      "category": "idea",
+      "title": "💤 睡眠与决策质量的反常识",
+      "body": "**添加时间:** 2026-03-26\n**来源:** 今日反常识发现推送\n**核心观点:** 睡眠越少越努力的人，决策质量反而更差——\"拼命感\"是认知偏差的产物\n**关键数据:**\n- 睡6小时的人感觉良好，但测试表现与睡4小时几乎相同\n- 前额叶皮层（理性决策）缺眠时最先受损，杏仁核（情绪冲动）反而增强\n- 多巴胺奖励的是\"努力行为本身\"，不是输出质量\n**写作角度:** 反常识切入 → 文",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
     {
       "id": 11,
       "category": "draft",
@@ -319,268 +585,16 @@
     },
     {
       "id": 97,
-      "category": "market",
-      "title": "BTC 链上数据快照",
-      "body": "资金费率：-- | 稳定币趋势：-- | 数据时间：2026-03-27",
-      "date": "2026-03-27T08:00",
-      "priority": "low",
-      "tags": [
-        "BTC",
-        "市场"
-      ],
-      "source": "btc-dashboard",
-      "url": "https://btc.zhixingshe.cc"
-    },
-    {
-      "id": 79,
       "category": "idea",
-      "title": "🏦 Idea Bank (灵感银行)",
-      "body": "> **Last Updated:** 2026-03-26\n> **Source:** Twitter #IndieHacker #BuildInPublic + 国内年轻人话题监控 + 董事长会话沉淀\n> **更新规则:** 每天 08:10 自动追加新情报，直接归档排名，无需确认\n\n---",
+      "title": "「记下这个想法：xxx」→ 猫巴士写入当日 memory → 触发 update_and_push.sh → 数据实时进仪表盘",
+      "body": "",
       "date": "2026-03-27T00:00",
-      "priority": "low",
+      "priority": "mid",
       "tags": [
         "创意",
-        "Idea Bank"
+        "Telegram"
       ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 80,
-      "category": "idea",
-      "title": "🔄 选题闭环流程",
-      "body": "```\n每周一 → 猫巴士 从「待选」里挑1个推荐给董事长\n         → 董事长确认 → 状态改为「本周主推」\n         → Ghostwriter 起草公众号文章\n         → 董事长审核 → 发布\n         → Zhihu Specialist 改编知乎版本\n         → Librarian 将状态改为「已发布」\n```\n\n**每个项目的生命周期状态：*",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 81,
-      "category": "idea",
-      "title": "📌 本周主推 (2026-03-26 当前)",
-      "body": "> **《别焦虑了，你不需要学会所有AI工具》**\n> 状态：✍️ 写作中（笔杆子已出草稿，待算盘审核）\n> 金句：「焦虑的反面不是'全都学会'，是'找到一件，做到够用'」\n\n---",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 82,
-      "category": "idea",
-      "title": "📝 项目详情档案",
-      "body": "### 1. 🧾 ReceiptRoast 账单羞辱 ✅ 已发布\n- **线上火热度：** 月底账单焦虑是00后高频话题，小红书\"消费羞耻\"标签持续爆发\n- **国外源头：** TikTok账单羞辱文化，Z世代用self-roast解构消费焦虑\n- **痛点：** 月底看账单崩溃，传统记账App数据不扎心不改行为\n- **核心功能：** 上传支付宝/微信账单截图 → OCR识别 → 毒舌股评家风格",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 83,
-      "category": "idea",
-      "title": "2. 😩 内耗计量表 🟡 待选",
-      "body": "- **线上火热度：** 「精神内耗可视化」是2026年00后最热心理话题，小红书日均相关帖子10万+\n- **痛点：** 年轻人需要量化焦虑、给情绪贴标签作为减压方式\n- **核心功能：** 每天输入3句话 → AI输出今日内耗指数 + 内耗来源分析 + 一句「够了，下班吧」\n- **商业模式：** 免费基础版，Pro版提供「内耗周报」和「减压处方」\n- **300字简介路径：** `memor",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 84,
-      "category": "idea",
-      "title": "3. 💎 Anti-AI 写作助手 🟡 待选",
-      "body": "- **线上火热度：** AI检测工具在学生群体中持续升温，「去AI味」需求爆发\n- **痛点：** 用ChatGPT写东西，一眼被看出来\n- **核心功能：** 输入AI生成文本 → 注入口语/俚语/故意瑕疵 → 输出「人味版本」\n- **商业模式：** 按字数收费 / 月订阅",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 85,
-      "category": "idea",
-      "title": "4. 🏷️ 班味祛除生成器 🟡 待选",
-      "body": "- **线上火热度：** 「班味」是2026年小红书最高频词之一\n- **核心功能：** 输入今天上班有多难熬 → AI定制3分钟「去班味程序」\n- **制作难度极低：** 纯Prompt，1天可出Demo",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 86,
-      "category": "idea",
-      "title": "5. 💘 AI 僚机键盘 🟡 待选",
-      "body": "- **痛点：** 聊天卡壳，不知道怎么回\n- **核心功能：** 截图 → OCR识别 → 生成3个回复（幽默/深情/高冷）",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 87,
-      "category": "idea",
-      "title": "6. 📸 FitCheck 毒舌顾问 🟡 待选",
-      "body": "- **核心功能：** 拍照 → AI毒舌打分(1-10) → 具体修改建议",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 88,
-      "category": "idea",
-      "title": "7. 🤝 搭子匹配问卷生成器 🟡 待选",
-      "body": "- **核心功能：** 输入生活节奏和偏好 → AI生成精准「找搭子」帖子",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 89,
-      "category": "idea",
-      "title": "8. 📅 GhostCalendar 托词生成器 🟡 待选",
-      "body": "- **核心功能：** 输入要拒绝的事+对方身份 → 生成3条托词 + 透明度检测",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 90,
-      "category": "idea",
-      "title": "9. 🗺️ 行程去网红化助手 🟡 待选",
-      "body": "- **核心功能：** 输入城市 → AI专门推荐「没人发过的」本地路线",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 91,
-      "category": "idea",
-      "title": "10. 📊 SlideSpy 竞品PPT反向工程 🟡 待选",
-      "body": "- **核心功能：** 上传PPT → 提炼核心卖点/定价/竞争壁垒 → 批量对比矩阵",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 92,
-      "category": "idea",
-      "title": "11. 🧩 孩子跳步骤 vs 大人抄捷径 🟡 待选",
-      "body": "- **加入日期：** 2026-03-25\n- **董事长评价：** \"挺好，展开成内容\"\n- **核心洞察：** 孩子做数学题想跳步骤，和大人做副业想抄捷径，是同一件事\n- **可延伸方向：**\n  1. 数学系列：用孩子列竖式，聊\"过程可见\"的价值\n  2. AI副业系列：跳过验证直接开干，最后返工的真实代价\n  3. 通用底层逻辑：人为什么总想跳步骤？结果看得见，过程看不见价值\n- **系",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 93,
-      "category": "idea",
-      "title": "12. 😤 别焦虑了，你不需要学会所有AI工具 ✍️ 写作中",
-      "body": "- **加入日期：** 2026-03-26\n- **选题来源：** 赛道轮换\"情绪/心理\"（笔杆子自主选题）\n- **核心观点：** 73%的人对AI焦虑，但88%的焦虑来自社交比较而非实际威胁\n- **金句：** 「焦虑的反面不是'全都学会'，是'找到一件，做到够用'」\n- **草稿状态：** 约1100字，待算盘审核\n\n---",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 94,
-      "category": "idea",
-      "title": "📄 文章草稿索引",
-      "body": "| 文章标题 | 状态 | 草稿路径 | 创建日期 |\n| :--- | :--- | :--- | :--- |\n| 《我让 AI \"审判\"了上个月的账单，结果被骂哭了》| ✅ 已发布(blog) | `memory/drafts/2026-03-06_draft_receiptroast.md` | 2026-03-06 |\n| 内耗计量表·300字产品简介 | ✅ 备用 | `memory/",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 95,
-      "category": "idea",
-      "title": "✅ 已发布归档",
-      "body": "| 标题 | 平台 | 发布日期 |\n| :--- | :--- | :--- |\n| 《0薪水、0社保、24小时待命：揭秘我的\"硅基黑工厂\"》 | 公众号 | 2026-02 |\n| 《在这个快节奏的时代，我选择\"慢思考\"》 | 公众号 + 知乎 | 2026-03-03 |\n| 《别解释了，点亮\"他\"》 | 公众号 + 知乎 | 2026-03-05 |\n| 《我让 AI \"审判\"了上个月的账",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
-      "url": null
-    },
-    {
-      "id": 96,
-      "category": "idea",
-      "title": "💤 睡眠与决策质量的反常识",
-      "body": "**添加时间:** 2026-03-26\n**来源:** 今日反常识发现推送\n**核心观点:** 睡眠越少越努力的人，决策质量反而更差——\"拼命感\"是认知偏差的产物\n**关键数据:**\n- 睡6小时的人感觉良好，但测试表现与睡4小时几乎相同\n- 前额叶皮层（理性决策）缺眠时最先受损，杏仁核（情绪冲动）反而增强\n- 多巴胺奖励的是\"努力行为本身\"，不是输出质量\n**写作角度:** 反常识切入 → 文",
-      "date": "2026-03-27T00:00",
-      "priority": "low",
-      "tags": [
-        "创意",
-        "Idea Bank"
-      ],
-      "source": "idea_bank.md",
+      "source": "Telegram",
       "url": null
     },
     {
