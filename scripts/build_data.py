@@ -25,7 +25,7 @@ def add(category, title, body="", date=None, priority="low", tags=None, source=N
         "id": item_id,
         "category": category,
         "title": title,
-        "body": body[:300] if body else "",
+        "body": body if body else "",  # 不截断，前端自行处理
         "date": date or today_str + "T00:00",
         "priority": priority,
         "tags": tags or [],
@@ -71,8 +71,11 @@ def load_drafts():
                 break
         if not title:
             continue
+        # 读取全文（供详情展示）
+        full_body = "".join(lines)
+        # 摘要（前3段非空行）
         body_lines = [l.strip() for l in lines[5:15] if l.strip() and not l.startswith("#")]
-        body = " ".join(body_lines)[:200]
+        body = full_body  # 保存全文到 body
         # 日期从文件名
         dm = re.match(r"(\d{4}-\d{2}-\d{2})", fname)
         date = dm.group(1) + "T09:00" if dm else today_str + "T09:00"
@@ -211,6 +214,32 @@ def load_market():
             pass
 
 
+
+# ─── 图片库（Designer 生成图片）─────────────────────────────────────
+def load_images():
+    img_dir = f"{WORKSPACE}/info-dashboard/images/designer"
+    if not os.path.exists(img_dir):
+        return
+    exts = (".png", ".jpg", ".jpeg", ".webp")
+    files = sorted(
+        [f for f in os.listdir(img_dir) if f.lower().endswith(exts)],
+        reverse=True
+    )
+    for fname in files:
+        # 从文件名提取日期
+        dm = re.match(r"(\d{4}-\d{2}-\d{2})", fname)
+        date = dm.group(1) + "T00:00" if dm else today_str + "T00:00"
+        # 生成标题（去掉日期和扩展名）
+        title = re.sub(r"^\d{4}-\d{2}-\d{2}[-_]?\d*[-_]?", "", fname)
+        title = re.sub(r"\.(png|jpg|jpeg|webp)$", "", title, flags=re.IGNORECASE)
+        title = title.replace("-", " ").replace("_", " ").strip() or fname
+        # url = 相对路径（Vercel 托管）
+        url = f"/images/designer/{fname}"
+        add("image", title, body=fname,
+            date=date, priority="low",
+            tags=["图片", "Designer"],
+            source="Designer", url=url)
+
 # ─── 8. 直接记录的想法（来自 ideas.json）────────────────────────────────
 def load_ideas_json():
     f = f"{WORKSPACE}/info-dashboard/ideas.json"
@@ -231,6 +260,7 @@ load_intel()
 load_news()
 load_ideas()
 load_telegram_ideas()
+load_images()
 load_ideas_json()
 load_market()
 

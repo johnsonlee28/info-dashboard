@@ -41,22 +41,18 @@
   .filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
 
   /* LAYOUT */
-  .main { display: grid; grid-template-columns: 280px 1fr; gap: 0; min-height: calc(100vh - 110px); }
+  .main { display: grid; grid-template-columns: 280px 1fr; gap: 0; min-height: calc(100vh - 115px); }
 
   /* SIDEBAR */
   .sidebar { border-right: 1px solid var(--border); padding: 20px 16px; background: var(--surface); }
   .sidebar-section { margin-bottom: 24px; }
   .sidebar-title { font-size: 11px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
-
   .stat-row { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-radius: 6px; margin-bottom: 4px; background: var(--surface2); }
   .stat-label { font-size: 13px; color: var(--muted); }
   .stat-val { font-size: 14px; font-weight: 700; }
-
   .tag-cloud { display: flex; flex-wrap: wrap; gap: 6px; }
   .tag { padding: 3px 10px; border-radius: 12px; font-size: 12px; background: var(--tag-bg); border: 1px solid var(--border); cursor: pointer; transition: all 0.15s; color: var(--muted); }
   .tag:hover, .tag.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-
-  .agent-list { }
   .agent-item { display: flex; align-items: center; gap: 8px; padding: 6px 10px; border-radius: 6px; margin-bottom: 4px; }
   .agent-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--green); flex-shrink: 0; }
   .agent-name { font-size: 13px; }
@@ -66,12 +62,12 @@
   .feed { padding: 20px 24px; overflow-y: auto; }
   .date-group { margin-bottom: 28px; }
   .date-header { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
-  .date-label { font-size: 13px; font-weight: 700; color: var(--accent); }
+  .date-label { font-size: 13px; font-weight: 700; color: var(--accent); white-space: nowrap; }
   .date-line { flex: 1; height: 1px; background: var(--border); }
-  .date-count { font-size: 12px; color: var(--muted); }
+  .date-count { font-size: 12px; color: var(--muted); white-space: nowrap; }
 
   /* CARDS */
-  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; transition: border-color 0.15s; cursor: default; position: relative; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; margin-bottom: 10px; transition: border-color 0.15s; position: relative; }
   .card:hover { border-color: #333355; }
   .card-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
   .card-icon { font-size: 16px; flex-shrink: 0; margin-top: 1px; }
@@ -83,24 +79,74 @@
   .cat-todo { background: rgba(124,111,247,0.15); color: #7c6ff7; }
   .cat-news { background: rgba(91,164,245,0.15); color: #5ba4f5; }
   .cat-market { background: rgba(240,122,48,0.15); color: #f07a30; }
+  .cat-image { background: rgba(124,111,247,0.15); color: #b39ef7; }
   .card-time { font-size: 11px; color: var(--muted); }
   .card-source { font-size: 11px; color: var(--muted); }
   .priority-dot { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; margin-top: 5px; }
   .p-high { background: var(--red); box-shadow: 0 0 6px rgba(240,82,82,0.5); }
   .p-mid { background: var(--yellow); }
   .p-low { background: var(--accent2); }
-
-  .card-title { font-size: 15px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
-  .card-body { font-size: 13px; color: #aaaacc; line-height: 1.6; }
-  .card-footer { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; }
-  .card-tag { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: var(--tag-bg); border: 1px solid var(--border); color: var(--muted); }
-  .card-action { margin-left: auto; font-size: 11px; padding: 3px 10px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; transition: all 0.15s; }
-  .card-action:hover { border-color: var(--accent); color: var(--accent); }
-
-  /* PRIORITY STRIP */
   .card.p-strip-high { border-left: 3px solid var(--red); }
   .card.p-strip-mid { border-left: 3px solid var(--yellow); }
   .card.p-strip-low { border-left: 3px solid var(--accent2); }
+  .card-title { font-size: 15px; font-weight: 600; line-height: 1.4; margin-bottom: 6px; }
+  .card-body { font-size: 13px; color: #aaaacc; line-height: 1.6; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .card-footer { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 10px; align-items: center; }
+  .card-tag { font-size: 11px; padding: 2px 8px; border-radius: 10px; background: var(--tag-bg); border: 1px solid var(--border); color: var(--muted); }
+  .card-action { font-size: 11px; padding: 3px 10px; border-radius: 6px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; transition: all 0.15s; }
+  .card-action:hover { border-color: var(--accent); color: var(--accent); }
+  .card-action.primary { border-color: var(--accent); color: var(--accent); }
+  .card-action.primary:hover { background: var(--accent); color: #fff; }
+  .card-actions { display: flex; gap: 6px; margin-left: auto; }
+
+  /* IMAGE CARD */
+  .img-thumb { width: 100%; max-height: 180px; object-fit: cover; border-radius: 6px; margin-bottom: 8px; cursor: pointer; transition: opacity 0.15s; }
+  .img-thumb:hover { opacity: 0.85; }
+
+  /* IMAGE GRID VIEW */
+  .img-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 12px; }
+  .img-grid-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; transition: border-color 0.15s; }
+  .img-grid-card:hover { border-color: var(--accent); }
+  .img-grid-thumb { width: 100%; height: 140px; object-fit: cover; cursor: pointer; }
+  .img-grid-info { padding: 10px 12px; }
+  .img-grid-name { font-size: 12px; color: var(--text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; margin-bottom: 6px; }
+  .img-grid-actions { display: flex; gap: 6px; }
+  .img-grid-btn { flex: 1; font-size: 11px; padding: 4px 8px; border-radius: 5px; border: 1px solid var(--border); background: transparent; color: var(--muted); cursor: pointer; text-align: center; transition: all 0.15s; text-decoration: none; display: block; }
+  .img-grid-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .img-grid-btn.dl { border-color: var(--green); color: var(--green); }
+  .img-grid-btn.dl:hover { background: var(--green); color: #fff; }
+
+  /* MODAL */
+  .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.82); z-index: 500; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; transition: opacity 0.2s; pointer-events: none; }
+  .modal-overlay.open { opacity: 1; pointer-events: all; }
+  .modal { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; width: 100%; max-width: 780px; max-height: 90vh; display: flex; flex-direction: column; overflow: hidden; transform: translateY(16px); transition: transform 0.2s; }
+  .modal-overlay.open .modal { transform: translateY(0); }
+  .modal-header { padding: 16px 20px; border-bottom: 1px solid var(--border); display: flex; align-items: center; gap: 12px; }
+  .modal-title { font-size: 16px; font-weight: 700; flex: 1; }
+  .modal-close { background: none; border: 1px solid var(--border); color: var(--muted); width: 30px; height: 30px; border-radius: 6px; cursor: pointer; font-size: 16px; display: flex; align-items: center; justify-content: center; transition: all 0.15s; }
+  .modal-close:hover { border-color: var(--red); color: var(--red); }
+  .modal-body { flex: 1; overflow-y: auto; padding: 20px; }
+  .modal-footer { padding: 14px 20px; border-top: 1px solid var(--border); display: flex; gap: 10px; justify-content: flex-end; }
+  .modal-btn { padding: 7px 18px; border-radius: 8px; font-size: 13px; cursor: pointer; border: 1px solid var(--border); background: var(--surface2); color: var(--text); transition: all 0.15s; }
+  .modal-btn:hover { border-color: var(--accent); color: var(--accent); }
+  .modal-btn.accent { background: var(--accent); border-color: var(--accent); color: #fff; }
+  .modal-btn.accent:hover { background: #6a5fe0; }
+  .modal-btn.green { background: var(--green); border-color: var(--green); color: #fff; }
+  .modal-btn.green:hover { background: #3e9e72; }
+
+  /* DRAFT CONTENT */
+  .draft-content { font-size: 13px; line-height: 1.8; color: #cccce0; white-space: pre-wrap; word-break: break-word; }
+  .draft-content h1, .draft-content h2, .draft-content h3 { color: var(--text); margin: 16px 0 8px; }
+
+  /* IMG LIGHTBOX */
+  .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.92); z-index: 600; display: flex; align-items: center; justify-content: center; padding: 20px; opacity: 0; transition: opacity 0.2s; pointer-events: none; flex-direction: column; gap: 16px; }
+  .lightbox.open { opacity: 1; pointer-events: all; }
+  .lightbox img { max-width: 100%; max-height: 75vh; object-fit: contain; border-radius: 8px; }
+  .lightbox-actions { display: flex; gap: 12px; }
+  .lightbox-btn { padding: 8px 20px; border-radius: 8px; font-size: 13px; cursor: pointer; border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.08); color: #fff; transition: all 0.15s; text-decoration: none; }
+  .lightbox-btn:hover { background: rgba(255,255,255,0.15); }
+  .lightbox-btn.green { background: var(--green); border-color: var(--green); }
+  .lightbox-close { position: absolute; top: 20px; right: 20px; background: rgba(255,255,255,0.1); border: none; color: #fff; width: 36px; height: 36px; border-radius: 50%; cursor: pointer; font-size: 18px; }
 
   /* EMPTY */
   .empty { text-align: center; padding: 60px 20px; color: var(--muted); }
@@ -116,6 +162,7 @@
     .feed { padding: 14px; }
     .header { padding: 12px 16px; }
     .filters { padding: 10px 14px; }
+    .img-grid { grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); }
   }
 </style>
 </head>
@@ -126,7 +173,7 @@
     <div class="logo">🧭</div>
     <div class="title-block">
       <h1>知行社 · 信息中台</h1>
-      <p>情报 · 草稿 · 待办 · 创意 · 一网打尽</p>
+      <p>情报 · 草稿 · 待办 · 创意 · 图库 · 一网打尽</p>
     </div>
   </div>
   <div class="header-right">
@@ -138,11 +185,12 @@
 <div class="filters">
   <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">全部</button>
   <button class="filter-btn" data-filter="intel" onclick="setFilter('intel',this)">📰 情报</button>
-  <button class="filter-btn" data-filter="idea" onclick="setFilter('idea',this)">💡 创意/Idea</button>
-  <button class="filter-btn" data-filter="draft" onclick="setFilter('draft',this)">📝 内容草稿</button>
+  <button class="filter-btn" data-filter="idea" onclick="setFilter('idea',this)">💡 创意</button>
+  <button class="filter-btn" data-filter="draft" onclick="setFilter('draft',this)">📝 草稿</button>
   <button class="filter-btn" data-filter="todo" onclick="setFilter('todo',this)">✅ 待办</button>
-  <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">🤖 AI简报</button>
+  <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">🤖 简报</button>
   <button class="filter-btn" data-filter="market" onclick="setFilter('market',this)">📊 市场</button>
+  <button class="filter-btn" data-filter="image" onclick="setFilter('image',this)">🖼 图库</button>
 </div>
 
 <div class="main">
@@ -157,12 +205,39 @@
     </div>
     <div class="sidebar-section">
       <div class="sidebar-title">团队状态</div>
-      <div class="agent-list" id="agentList"></div>
+      <div id="agentList"></div>
     </div>
   </div>
 
   <div class="feed" id="feed">
     <div class="empty"><div class="empty-icon">⏳</div><div>加载中...</div></div>
+  </div>
+</div>
+
+<!-- 草稿详情 Modal -->
+<div class="modal-overlay" id="draftModal" onclick="closeDraftModal(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <div class="modal-title" id="draftModalTitle">草稿详情</div>
+      <button class="modal-close" onclick="closeDraftModal()">✕</button>
+    </div>
+    <div class="modal-body">
+      <pre class="draft-content" id="draftModalContent"></pre>
+    </div>
+    <div class="modal-footer">
+      <button class="modal-btn" onclick="closeDraftModal()">关闭</button>
+      <button class="modal-btn green" id="draftDownloadBtn" onclick="downloadDraft()">⬇ 下载 .md</button>
+    </div>
+  </div>
+</div>
+
+<!-- 图片灯箱 -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+  <button class="lightbox-close" onclick="closeLightbox()">✕</button>
+  <img id="lightboxImg" src="" alt="">
+  <div class="lightbox-actions">
+    <a class="lightbox-btn green" id="lightboxDl" href="" download>⬇ 下载图片</a>
+    <button class="lightbox-btn" onclick="closeLightbox()">关闭</button>
   </div>
 </div>
 
@@ -172,14 +247,17 @@
 let allItems = [];
 let currentFilter = 'all';
 let currentTag = null;
+let _draftContent = '';
+let _draftTitle = '';
 
 const CAT_MAP = {
-  intel: { label: '情报', icon: '📰', cls: 'cat-intel' },
-  idea:  { label: '创意', icon: '💡', cls: 'cat-idea' },
-  draft: { label: '草稿', icon: '📝', cls: 'cat-draft' },
-  todo:  { label: '待办', icon: '✅', cls: 'cat-todo' },
-  news:  { label: 'AI简报', icon: '🤖', cls: 'cat-news' },
-  market:{ label: '市场', icon: '📊', cls: 'cat-market' },
+  intel:  { label: '情报',  icon: '📰', cls: 'cat-intel' },
+  idea:   { label: '创意',  icon: '💡', cls: 'cat-idea' },
+  draft:  { label: '草稿',  icon: '📝', cls: 'cat-draft' },
+  todo:   { label: '待办',  icon: '✅', cls: 'cat-todo' },
+  news:   { label: 'AI简报',icon: '🤖', cls: 'cat-news' },
+  market: { label: '市场',  icon: '📊', cls: 'cat-market' },
+  image:  { label: '图片',  icon: '🖼', cls: 'cat-image' },
 };
 
 async function init() {
@@ -228,6 +306,12 @@ function render() {
     return;
   }
 
+  // 图片专用网格视图
+  if (currentFilter === 'image') {
+    renderImageGrid(filtered);
+    return;
+  }
+
   // group by date
   const groups = {};
   filtered.forEach(item => {
@@ -255,27 +339,7 @@ function render() {
       </div>`;
 
     for (const item of items) {
-      const cat = CAT_MAP[item.category] || { label: item.category, icon: '📌', cls: '' };
-      const pClass = item.priority === 'high' ? 'p-strip-high' : item.priority === 'mid' ? 'p-strip-mid' : 'p-strip-low';
-      const pDot = item.priority === 'high' ? 'p-high' : item.priority === 'mid' ? 'p-mid' : 'p-low';
-      const tags = (item.tags || []).map(t => `<span class="card-tag">${t}</span>`).join('');
-      const source = item.source ? `<span class="card-source">来源：${item.source}</span>` : '';
-      const link = item.url ? `<button class="card-action" onclick="window.open('${item.url}')">查看原文 →</button>` : '';
-
-      html += `<div class="card ${pClass}">
-        <div class="card-top">
-          <div class="card-icon">${cat.icon}</div>
-          <div class="card-meta">
-            <span class="card-category ${cat.cls}">${cat.label}</span>
-            ${source}
-            <span class="card-time">${(item.date||'').slice(11,16)||''}</span>
-          </div>
-          <div class="priority-dot ${pDot}"></div>
-        </div>
-        <div class="card-title">${item.title}</div>
-        ${item.body ? `<div class="card-body">${item.body}</div>` : ''}
-        <div class="card-footer">${tags}${link}</div>
-      </div>`;
+      html += renderCard(item);
     }
     html += '</div>';
   }
@@ -283,8 +347,150 @@ function render() {
   document.getElementById('feed').innerHTML = html;
 }
 
+function renderCard(item) {
+  const cat = CAT_MAP[item.category] || { label: item.category, icon: '📌', cls: '' };
+  const pClass = item.priority === 'high' ? 'p-strip-high' : item.priority === 'mid' ? 'p-strip-mid' : 'p-strip-low';
+  const pDot = item.priority === 'high' ? 'p-high' : item.priority === 'mid' ? 'p-mid' : 'p-low';
+  const tags = (item.tags || []).map(t => `<span class="card-tag">${t}</span>`).join('');
+  const source = item.source ? `<span class="card-source">来源：${item.source}</span>` : '';
+  const timeStr = (item.date||'').slice(11,16) || '';
+
+  // 草稿卡片：缩略 + 展开全文+下载按钮
+  if (item.category === 'draft') {
+    const preview = (item.body || '').slice(0, 200).replace(/</g,'&lt;').replace(/>/g,'&gt;');
+    const safeTitle = (item.title || '').replace(/'/g, "\\'");
+    const safeBody = (item.body || '').replace(/\\/g,'\\\\').replace(/'/g,"\\'").replace(/\n/g,'\\n');
+    return `<div class="card ${pClass}">
+      <div class="card-top">
+        <div class="card-icon">${cat.icon}</div>
+        <div class="card-meta">
+          <span class="card-category ${cat.cls}">${cat.label}</span>
+          ${source}
+          <span class="card-time">${timeStr}</span>
+        </div>
+        <div class="priority-dot ${pDot}"></div>
+      </div>
+      <div class="card-title">${escHtml(item.title)}</div>
+      ${item.body ? `<div class="card-body">${escHtml(preview)}${item.body.length>200?'…':''}</div>` : ''}
+      <div class="card-footer">${tags}
+        <div class="card-actions">
+          <button class="card-action primary" onclick="openDraft('${safeTitle}','${safeBody}')">📖 阅读全文</button>
+          <button class="card-action" onclick="downloadDraftInline('${safeTitle}','${safeBody}')">⬇ 下载</button>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // 图片卡片（列表视图）
+  if (item.category === 'image') {
+    const imgUrl = item.url || '';
+    return `<div class="card ${pClass}">
+      <div class="card-top">
+        <div class="card-icon">${cat.icon}</div>
+        <div class="card-meta">
+          <span class="card-category ${cat.cls}">${cat.label}</span>
+          ${source}
+          <span class="card-time">${timeStr}</span>
+        </div>
+      </div>
+      ${imgUrl ? `<img class="img-thumb" src="${imgUrl}" alt="${escHtml(item.title)}" onclick="openLightbox('${imgUrl}','${escHtml(item.title)}')">` : ''}
+      <div class="card-title">${escHtml(item.title)}</div>
+      <div class="card-footer">${tags}
+        <div class="card-actions">
+          <button class="card-action" onclick="openLightbox('${imgUrl}','${escHtml(item.title)}')">🔍 放大</button>
+          <a class="card-action primary" href="${imgUrl}" download="${item.body||'image.png'}">⬇ 下载</a>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  // 普通卡片
+  const link = item.url ? `<button class="card-action" onclick="window.open('${item.url}')">查看原文 →</button>` : '';
+  return `<div class="card ${pClass}">
+    <div class="card-top">
+      <div class="card-icon">${cat.icon}</div>
+      <div class="card-meta">
+        <span class="card-category ${cat.cls}">${cat.label}</span>
+        ${source}
+        <span class="card-time">${timeStr}</span>
+      </div>
+      <div class="priority-dot ${pDot}"></div>
+    </div>
+    <div class="card-title">${escHtml(item.title)}</div>
+    ${item.body ? `<div class="card-body">${escHtml(item.body.slice(0,200))}${item.body.length>200?'…':''}</div>` : ''}
+    <div class="card-footer">${tags}${link}</div>
+  </div>`;
+}
+
+function renderImageGrid(items) {
+  let html = '<div class="img-grid">';
+  for (const item of items) {
+    const imgUrl = item.url || '';
+    const fname = item.body || 'image.png';
+    const safeTitle = item.title.replace(/'/g,"\\'");
+    html += `<div class="img-grid-card">
+      <img class="img-grid-thumb" src="${imgUrl}" alt="${escHtml(item.title)}" loading="lazy"
+           onclick="openLightbox('${imgUrl}','${safeTitle}','${fname}')">
+      <div class="img-grid-info">
+        <div class="img-grid-name" title="${escHtml(item.title)}">${escHtml(item.title)}</div>
+        <div class="img-grid-actions">
+          <a class="img-grid-btn dl" href="${imgUrl}" download="${fname}">⬇ 下载</a>
+          <button class="img-grid-btn" onclick="openLightbox('${imgUrl}','${safeTitle}','${fname}')">🔍 放大</button>
+        </div>
+      </div>
+    </div>`;
+  }
+  html += '</div>';
+  document.getElementById('feed').innerHTML = html;
+}
+
+// ─── Draft Modal ──────────────────────────────────────────────────────────────
+function openDraft(title, bodyEncoded) {
+  _draftTitle = title;
+  _draftContent = bodyEncoded.replace(/\\n/g, '\n').replace(/\\'/g, "'").replace(/\\\\/g,'\\');
+  document.getElementById('draftModalTitle').textContent = title;
+  document.getElementById('draftModalContent').textContent = _draftContent;
+  document.getElementById('draftModal').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDraftModal(e) {
+  if (e && e.target !== document.getElementById('draftModal')) return;
+  document.getElementById('draftModal').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function downloadDraft() {
+  downloadDraftInline(_draftTitle, _draftContent, true);
+}
+
+function downloadDraftInline(title, body, alreadyDecoded) {
+  const content = alreadyDecoded ? body : body.replace(/\\n/g, '\n').replace(/\\'/g, "'").replace(/\\\\/g,'\\');
+  const blob = new Blob([content], {type: 'text/markdown;charset=utf-8'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = (title || 'draft').replace(/[《》\s\/\\]/g, '_') + '.md';
+  a.click();
+  showToast('✅ 下载完成');
+}
+
+// ─── Lightbox ─────────────────────────────────────────────────────────────────
+function openLightbox(url, title, fname) {
+  document.getElementById('lightboxImg').src = url;
+  document.getElementById('lightboxDl').href = url;
+  document.getElementById('lightboxDl').download = fname || 'image.png';
+  document.getElementById('lightbox').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox(e) {
+  if (e && e.target !== document.getElementById('lightbox') && !e.target.closest('.lightbox-close')) return;
+  document.getElementById('lightbox').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+// ─── Sidebar ──────────────────────────────────────────────────────────────────
 function renderSidebar(data) {
-  // stats
   const counts = {};
   allItems.forEach(i => { counts[i.category] = (counts[i.category]||0)+1; });
   let statsHtml = '';
@@ -295,7 +501,6 @@ function renderSidebar(data) {
   }
   document.getElementById('statsBox').innerHTML = statsHtml || '<div style="color:var(--muted);font-size:13px">暂无数据</div>';
 
-  // tags
   const tagCount = {};
   allItems.forEach(i => (i.tags||[]).forEach(t => { tagCount[t]=(tagCount[t]||0)+1; }));
   const sortedTags = Object.entries(tagCount).sort((a,b)=>b[1]-a[1]).slice(0,20);
@@ -303,15 +508,7 @@ function renderSidebar(data) {
     `<span class="tag" onclick="setTag('${t}',this)">${t} <span style="opacity:0.5">${c}</span></span>`
   ).join('');
 
-  // agents
-  const agents = data.agents || [
-    {name:'猫巴士', role:'总调度', status:'在线'},
-    {name:'笔杆子', role:'写作', status:'在线'},
-    {name:'算盘', role:'分析', status:'在线'},
-    {name:'侦察兵', role:'情报', status:'在线'},
-    {name:'视觉师', role:'设计', status:'在线'},
-    {name:'图书管理员', role:'归档', status:'在线'},
-  ];
+  const agents = data.agents || [];
   document.getElementById('agentList').innerHTML = agents.map(a =>
     `<div class="agent-item">
       <div class="agent-dot" style="${a.status!=='在线'?'background:var(--red)':''}"></div>
@@ -321,12 +518,25 @@ function renderSidebar(data) {
   ).join('');
 }
 
+// ─── Utils ────────────────────────────────────────────────────────────────────
+function escHtml(str) {
+  return (str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
 function showToast(msg) {
   const t = document.getElementById('toast');
   t.textContent = msg;
   t.classList.add('show');
   setTimeout(() => t.classList.remove('show'), 2500);
 }
+
+// ESC 关闭
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') {
+    closeDraftModal();
+    closeLightbox();
+  }
+});
 
 init();
 </script>
