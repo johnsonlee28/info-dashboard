@@ -210,6 +210,20 @@ def load_market():
         except:
             pass
 
+
+# ─── 8. 直接记录的想法（来自 ideas.json）────────────────────────────────
+def load_ideas_json():
+    f = f"{WORKSPACE}/info-dashboard/ideas.json"
+    if not os.path.exists(f):
+        return
+    with open(f) as fp:
+        ideas = json.load(fp)
+    for idea in ideas:
+        add("idea", idea.get("text","")[:60], body=idea.get("text",""),
+            date=idea.get("date", today_str+"T00:00"),
+            priority="mid", tags=idea.get("tags", ["Telegram想法"]),
+            source="Telegram")
+
 # ─── 执行 ──────────────────────────────────────────────────────────────────
 load_todos()
 load_drafts()
@@ -217,6 +231,7 @@ load_intel()
 load_news()
 load_ideas()
 load_telegram_ideas()
+load_ideas_json()
 load_market()
 
 # 按时间倒序排列
