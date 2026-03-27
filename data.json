@@ -1,0 +1,1391 @@
+{
+  "updatedAt": "2026-03-27 23:35 GMT+8",
+  "total": 97,
+  "items": [
+    {
+      "id": 11,
+      "category": "draft",
+      "title": "《选择越多，你越不敢选？问题不在选项，在你》",
+      "body": "打开购物App，从3000到8000，少说列了四十款。他花了一整个周末看测评、翻评论、对比参数，最后截图发群里问我们：\"你们觉得哪个好？\" 群里七嘴八舌，又多了五个推荐。 周一见面，他还在用那台旧手机。 这事你一定不陌生。不只是买手机。中午吃什么？孩子报哪个兴趣班？跳槽去大厂还是小公司？打开外卖App，光奶茶就有200家，最后饿着肚子刷了半小时。 选项变多了，决定反而更难下了。",
+      "date": "2026-03-27T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 1,
+      "category": "todo",
+      "title": "搜「已读不回怎么回复」，找近7天高互动帖，在评论区提供有价值内容+引导到 Wingman",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 2,
+      "category": "todo",
+      "title": "发第1篇场景帖：展示 Wingman 生成过程截图（主题：已读不回急救 or 开场白）",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 3,
+      "category": "todo",
+      "title": "蹭话题标签：#恋爱脑 #直男改造 #聊天技巧",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 4,
+      "category": "todo",
+      "title": "搜高赞问题：「聊天没话题怎么办」「已读不回怎么处理」「开场白怎么说」",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 5,
+      "category": "todo",
+      "title": "写高质量回答，自然带 Wingman 链接",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 6,
+      "category": "todo",
+      "title": "找相亲群、单身群、校园交友群",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 7,
+      "category": "todo",
+      "title": "用「截图秀成果」方式种草，不硬广",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-27.md",
+      "url": null
+    },
+    {
+      "id": 27,
+      "category": "intel",
+      "title": "MCP安全漏洞大爆发：66%服务器有安全问题，76个插件含恶意代码",
+      "body": "** 工程师扫描1,808个MCP服务器，发现66%存在安全漏洞；60天内出现30个CVE；76个已发布插件含恶意代码；top 7下载量最高的插件中5个是恶意软件。核心问题：目前所有主流平台（Claude/Cursor/ChatGPT）对MCP工具权限只有\"全开或全关\"，没有细粒度控制。举例：接一个Postgres MCP想要读权限，结果连DELETE、DROP TABLE都暴露了；GitHub MCP用于读代码，却同时暴露了delete_repository。",
+      "date": "2026-03-27T08:00",
+      "priority": "high",
+      "tags": [
+        "情报",
+        "评分92"
+      ],
+      "source": "侦察兵",
+      "url": "https://news.ycombinator.com/item?id=47530428"
+    },
+    {
+      "id": 28,
+      "category": "intel",
+      "title": "LiteLLM 1.82.8 供应链投毒事件：Claude Code一小时内识别并举报",
+      "body": "** 3月24日，LiteLLM PyPI包 v1.82.8 被投毒，上传后8分钟内有人下载（10:58），恶意代码11:07写入持久化，11:09触发。当事工程师靠Claude Code在不到1小时内完成：发现异常→分析恶意代码→联系PyPI→发布披露报告→LiteLLM官方修复。关键结论：AI大幅提速了安全响应速度，但也加速了恶意代码创作。",
+      "date": "2026-03-27T08:00",
+      "priority": "high",
+      "tags": [
+        "情报",
+        "评分85"
+      ],
+      "source": "侦察兵",
+      "url": "https://futuresearch.ai/blog/litellm-attack-transcript/"
+    },
+    {
+      "id": 29,
+      "category": "intel",
+      "title": "ARC-AGI-3发布：全球最强AI集体得分<1%，人类满分通关",
+      "body": "** ARC Prize发布ARC-AGI-3基准测试，定位为\"目前最难的AGI测试\"。全球顶尖模型（包括Anthropic Opus 4.6）最高得分仅0.2%，而人类可以满分通关。这被视为\"AI打回原始人\"时刻——说明当前LLM在真正的抽象推理、泛化能力上仍与人类有根本差距。",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分78"
+      ],
+      "source": "侦察兵",
+      "url": "https://arcprize.org/arc-agi/3"
+    },
+    {
+      "id": 30,
+      "category": "intel",
+      "title": "Meta发布HyperAgents：自我引用自我进化Agent，可优化任意可计算任务",
+      "body": "** Facebook Research开源HyperAgents框架，实现\"自我引用自我改进\"的Agent，理论上可以针对任何可计算任务持续自我优化。已被ICLR 2026接收。",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分72"
+      ],
+      "source": "侦察兵",
+      "url": "https://github.com/facebookresearch/hyperagents"
+    },
+    {
+      "id": 31,
+      "category": "intel",
+      "title": "谷歌TurboQuant算法：内存需求暴降6倍，推理速度提升8倍",
+      "body": "** 谷歌发布TurboQuant量化算法，将KV Cache压缩至3-bit，AI推理内存占用降至1/6。直接影响：存储芯片（HBM/DRAM）需求将大幅下降，海力士等内存厂股价单日大跌；边缘推理成本降低，本地部署更可行。",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分70"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 32,
+      "category": "intel",
+      "title": "前谷歌PM：\"我雇了40个AI代理，月花500美元，顶5万美元团队\"",
+      "body": "** 前谷歌产品负责人分享：用40个AI Agent协作，月费用约500美元，产出相当于月薪5万美元的团队。核心结论：100倍效率差不是未来，是现在正在发生的现实。",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分68"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 33,
+      "category": "intel",
+      "title": "GitHub新规：默认用用户代码训练AI，开发者怒批\"强行授权\"",
+      "body": "** GitHub更新条款，默认将用户代码纳入AI训练数据。官方称\"真实世界数据 = 更智能的模型\"，但开发者社区强烈反弹，认为这是\"强行授权\"，没有给予真正的选择退出权。",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分65"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 34,
+      "category": "intel",
+      "title": "月之暗面（Kimi）传考虑赴港上市",
+      "body": "** 有消息称月之暗面正在考虑赴港IPO，手握百亿现金，市场分析认为上市动机可能是战略布局而非资金需求。",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分63"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 35,
+      "category": "intel",
+      "title": "Stripe CLI推出Projects功能：直接从命令行管理服务",
+      "body": "** Stripe发布stripe projects命令，支持从CLI直接Provision和管理Stripe服务。独立开发者工具链又进一步。",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分55"
+      ],
+      "source": "侦察兵",
+      "url": "https://projects.dev/"
+    },
+    {
+      "id": 36,
+      "category": "intel",
+      "title": "浙大博士造出机器人界的F1：不卷算法卷硬件响应速度",
+      "body": "** 国内机器人硬件创业项目，目标是让机器人跑得比博尔特快，突破点在于硬件响应速度而非算法创新。",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分52"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 37,
+      "category": "intel",
+      "title": "V2EX独立开发者发布\"照片冲出相框\"App，附赠码",
+      "body": "** V2EX用户分享自己开发的将照片3D化冲出相框效果的App，社区反响热烈。典型独立开发者小产品。",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分48"
+      ],
+      "source": "侦察兵",
+      "url": "https://www.v2ex.com/t/1201202"
+    },
+    {
+      "id": 38,
+      "category": "intel",
+      "title": "Colibri：基于AT Protocol的社区聊天平台",
+      "body": "** 去中心化协议AT Protocol上的新社区聊天平台，定位为Discord替代品。",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分44"
+      ],
+      "source": "侦察兵",
+      "url": "https://colibri.social/"
+    },
+    {
+      "id": 39,
+      "category": "intel",
+      "title": "NYC医院放弃Palantir AI系统（丢弃：与主题关联性低，且已是旧闻）",
+      "body": "",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 71,
+      "category": "news",
+      "title": "08:00 AI简报 Cron 任务",
+      "body": "- 执行今日AI Agent & DeepSeek简报 · - 搜索到：DeepSeek V4 即将发布（预计4月）、曾拒绝向Nvidia/AMD提前共享模型 · - 搜索到：三大AI Lab（OpenAI/Anthropic/Google）均推出各自Agent框架",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-27"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 72,
+      "category": "news",
+      "title": "08:10 Twitter Gold Rush Cron",
+      "body": "- 执行4组关键词搜索，API返回正常 · - 筛选出5条高质量推文并输出报告 · - 最高浏览量：921次（@Roman_Indie，多模型提供商测试）",
+      "date": "2026-03-27T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-27"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 97,
+      "category": "market",
+      "title": "BTC 链上数据快照",
+      "body": "资金费率：-- | 稳定币趋势：-- | 数据时间：2026-03-27",
+      "date": "2026-03-27T08:00",
+      "priority": "low",
+      "tags": [
+        "BTC",
+        "市场"
+      ],
+      "source": "btc-dashboard",
+      "url": "https://btc.zhixingshe.cc"
+    },
+    {
+      "id": 79,
+      "category": "idea",
+      "title": "🏦 Idea Bank (灵感银行)",
+      "body": "> **Last Updated:** 2026-03-26\n> **Source:** Twitter #IndieHacker #BuildInPublic + 国内年轻人话题监控 + 董事长会话沉淀\n> **更新规则:** 每天 08:10 自动追加新情报，直接归档排名，无需确认\n\n---",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 80,
+      "category": "idea",
+      "title": "🔄 选题闭环流程",
+      "body": "```\n每周一 → 猫巴士 从「待选」里挑1个推荐给董事长\n         → 董事长确认 → 状态改为「本周主推」\n         → Ghostwriter 起草公众号文章\n         → 董事长审核 → 发布\n         → Zhihu Specialist 改编知乎版本\n         → Librarian 将状态改为「已发布」\n```\n\n**每个项目的生命周期状态：*",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 81,
+      "category": "idea",
+      "title": "📌 本周主推 (2026-03-26 当前)",
+      "body": "> **《别焦虑了，你不需要学会所有AI工具》**\n> 状态：✍️ 写作中（笔杆子已出草稿，待算盘审核）\n> 金句：「焦虑的反面不是'全都学会'，是'找到一件，做到够用'」\n\n---",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 82,
+      "category": "idea",
+      "title": "📝 项目详情档案",
+      "body": "### 1. 🧾 ReceiptRoast 账单羞辱 ✅ 已发布\n- **线上火热度：** 月底账单焦虑是00后高频话题，小红书\"消费羞耻\"标签持续爆发\n- **国外源头：** TikTok账单羞辱文化，Z世代用self-roast解构消费焦虑\n- **痛点：** 月底看账单崩溃，传统记账App数据不扎心不改行为\n- **核心功能：** 上传支付宝/微信账单截图 → OCR识别 → 毒舌股评家风格",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 83,
+      "category": "idea",
+      "title": "2. 😩 内耗计量表 🟡 待选",
+      "body": "- **线上火热度：** 「精神内耗可视化」是2026年00后最热心理话题，小红书日均相关帖子10万+\n- **痛点：** 年轻人需要量化焦虑、给情绪贴标签作为减压方式\n- **核心功能：** 每天输入3句话 → AI输出今日内耗指数 + 内耗来源分析 + 一句「够了，下班吧」\n- **商业模式：** 免费基础版，Pro版提供「内耗周报」和「减压处方」\n- **300字简介路径：** `memor",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 84,
+      "category": "idea",
+      "title": "3. 💎 Anti-AI 写作助手 🟡 待选",
+      "body": "- **线上火热度：** AI检测工具在学生群体中持续升温，「去AI味」需求爆发\n- **痛点：** 用ChatGPT写东西，一眼被看出来\n- **核心功能：** 输入AI生成文本 → 注入口语/俚语/故意瑕疵 → 输出「人味版本」\n- **商业模式：** 按字数收费 / 月订阅",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 85,
+      "category": "idea",
+      "title": "4. 🏷️ 班味祛除生成器 🟡 待选",
+      "body": "- **线上火热度：** 「班味」是2026年小红书最高频词之一\n- **核心功能：** 输入今天上班有多难熬 → AI定制3分钟「去班味程序」\n- **制作难度极低：** 纯Prompt，1天可出Demo",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 86,
+      "category": "idea",
+      "title": "5. 💘 AI 僚机键盘 🟡 待选",
+      "body": "- **痛点：** 聊天卡壳，不知道怎么回\n- **核心功能：** 截图 → OCR识别 → 生成3个回复（幽默/深情/高冷）",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 87,
+      "category": "idea",
+      "title": "6. 📸 FitCheck 毒舌顾问 🟡 待选",
+      "body": "- **核心功能：** 拍照 → AI毒舌打分(1-10) → 具体修改建议",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 88,
+      "category": "idea",
+      "title": "7. 🤝 搭子匹配问卷生成器 🟡 待选",
+      "body": "- **核心功能：** 输入生活节奏和偏好 → AI生成精准「找搭子」帖子",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 89,
+      "category": "idea",
+      "title": "8. 📅 GhostCalendar 托词生成器 🟡 待选",
+      "body": "- **核心功能：** 输入要拒绝的事+对方身份 → 生成3条托词 + 透明度检测",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 90,
+      "category": "idea",
+      "title": "9. 🗺️ 行程去网红化助手 🟡 待选",
+      "body": "- **核心功能：** 输入城市 → AI专门推荐「没人发过的」本地路线",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 91,
+      "category": "idea",
+      "title": "10. 📊 SlideSpy 竞品PPT反向工程 🟡 待选",
+      "body": "- **核心功能：** 上传PPT → 提炼核心卖点/定价/竞争壁垒 → 批量对比矩阵",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 92,
+      "category": "idea",
+      "title": "11. 🧩 孩子跳步骤 vs 大人抄捷径 🟡 待选",
+      "body": "- **加入日期：** 2026-03-25\n- **董事长评价：** \"挺好，展开成内容\"\n- **核心洞察：** 孩子做数学题想跳步骤，和大人做副业想抄捷径，是同一件事\n- **可延伸方向：**\n  1. 数学系列：用孩子列竖式，聊\"过程可见\"的价值\n  2. AI副业系列：跳过验证直接开干，最后返工的真实代价\n  3. 通用底层逻辑：人为什么总想跳步骤？结果看得见，过程看不见价值\n- **系",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 93,
+      "category": "idea",
+      "title": "12. 😤 别焦虑了，你不需要学会所有AI工具 ✍️ 写作中",
+      "body": "- **加入日期：** 2026-03-26\n- **选题来源：** 赛道轮换\"情绪/心理\"（笔杆子自主选题）\n- **核心观点：** 73%的人对AI焦虑，但88%的焦虑来自社交比较而非实际威胁\n- **金句：** 「焦虑的反面不是'全都学会'，是'找到一件，做到够用'」\n- **草稿状态：** 约1100字，待算盘审核\n\n---",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 94,
+      "category": "idea",
+      "title": "📄 文章草稿索引",
+      "body": "| 文章标题 | 状态 | 草稿路径 | 创建日期 |\n| :--- | :--- | :--- | :--- |\n| 《我让 AI \"审判\"了上个月的账单，结果被骂哭了》| ✅ 已发布(blog) | `memory/drafts/2026-03-06_draft_receiptroast.md` | 2026-03-06 |\n| 内耗计量表·300字产品简介 | ✅ 备用 | `memory/",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 95,
+      "category": "idea",
+      "title": "✅ 已发布归档",
+      "body": "| 标题 | 平台 | 发布日期 |\n| :--- | :--- | :--- |\n| 《0薪水、0社保、24小时待命：揭秘我的\"硅基黑工厂\"》 | 公众号 | 2026-02 |\n| 《在这个快节奏的时代，我选择\"慢思考\"》 | 公众号 + 知乎 | 2026-03-03 |\n| 《别解释了，点亮\"他\"》 | 公众号 + 知乎 | 2026-03-05 |\n| 《我让 AI \"审判\"了上个月的账",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 96,
+      "category": "idea",
+      "title": "💤 睡眠与决策质量的反常识",
+      "body": "**添加时间:** 2026-03-26\n**来源:** 今日反常识发现推送\n**核心观点:** 睡眠越少越努力的人，决策质量反而更差——\"拼命感\"是认知偏差的产物\n**关键数据:**\n- 睡6小时的人感觉良好，但测试表现与睡4小时几乎相同\n- 前额叶皮层（理性决策）缺眠时最先受损，杏仁核（情绪冲动）反而增强\n- 多巴胺奖励的是\"努力行为本身\"，不是输出质量\n**写作角度:** 反常识切入 → 文",
+      "date": "2026-03-27T00:00",
+      "priority": "low",
+      "tags": [
+        "创意",
+        "Idea Bank"
+      ],
+      "source": "idea_bank.md",
+      "url": null
+    },
+    {
+      "id": 12,
+      "category": "draft",
+      "title": "《装了一堆Skill，AI每次都忘？因为你漏了最重要的一步》",
+      "body": "--- 上周干了一件特别有成就感的事。 花了一整个晚上，给猫巴士（AI助手）装了六个新Skill。搜索的、画图的、语音合成的、读网页的，一个个配好API Key，逐个测试通过。 那种感觉，就像给新员工准备好了工位、电脑、门禁卡、内部通讯录，连咖啡杯都摆上了。 心想：这下齐活了，明天开始大干一场。",
+      "date": "2026-03-26T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 13,
+      "category": "draft",
+      "title": "《装了一堆Skill，AI每次都忘？四步让它真正记住》",
+      "body": "--- 上周花了一晚上给猫巴士装了五六个新Skill。搜索的、画图的、语音合成的，一个个配好API Key，测试通过，开心收工。 第二天打开对话框：\"帮忙搜一下XXX。\" 猫巴士回了一句：\"好的，让我用Google搜索……\" 等等，昨晚不是刚装了Tavily吗？那个专门给AI用的搜索引擎，比Google准十倍的那个？",
+      "date": "2026-03-26T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 14,
+      "category": "draft",
+      "title": "《别焦虑了，你不需要学会所有AI工具》",
+      "body": "她不是技术小白。985毕业，外企做了八年市场策划，PPT、Excel玩得比大多数人溜。但过去三个月，她的朋友圈被AI刷屏了——同事用AI做了个短视频涨了五千粉，前同事转行做AI培训月入三万，连她妈都转发了一篇《不会AI的人将被淘汰》。 她觉得自己要被时代抛弃了。 这种感觉，很多人都有。 仔细想想，这种焦虑到底从哪来的？",
+      "date": "2026-03-26T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 15,
+      "category": "draft",
+      "title": "《别焦虑了，你不需要学会所有AI工具》",
+      "body": "她不是技术小白。985毕业，外企做了八年市场策划，PPT、Excel玩得比大多数人溜。但过去三个月，她的朋友圈被AI刷屏了——同事用AI做了个短视频涨了五千粉，前同事转行做AI培训月入三万，连她妈都转发了一篇《不会AI的人将被淘汰》。 她觉得自己要被时代抛弃了。 这种感觉，很多人都有。 仔细想想，这种焦虑到底从哪来的？",
+      "date": "2026-03-26T09:00",
+      "priority": "mid",
+      "tags": [
+        "草稿",
+        "已审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 16,
+      "category": "draft",
+      "title": "《儿子的作文一直写不出来，直到我不再教他写作文》",
+      "body": "> 状态：待董事长审核 --- 晚上九点，书房。 小5坐在桌前，作文本摊开，题目写好了，笔搁在旁边。 十分钟过去，一个字没动。",
+      "date": "2026-03-26T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 17,
+      "category": "draft",
+      "title": "《儿子的作文一直写不出来，直到我不再教他写作文》",
+      "body": "> 状态：待董事长审核 --- 晚上九点，书房。 小5坐在桌前，作文本摊开，题目写好了，笔搁在旁边。 十分钟过去，一个字没动。",
+      "date": "2026-03-26T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 8,
+      "category": "todo",
+      "title": "算盘审核《别焦虑了》草稿，完成后通知董事长",
+      "body": "",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-26.md",
+      "url": null
+    },
+    {
+      "id": 9,
+      "category": "todo",
+      "title": "wingman.zhixingshe.cc 冷启动方案已给出框架，等董事长确认是否让笔杆子起草种子帖",
+      "body": "",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-26.md",
+      "url": null
+    },
+    {
+      "id": 10,
+      "category": "todo",
+      "title": "Scout下次情报收集改用Tavily（需更新Scout工作流）",
+      "body": "",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "待办"
+      ],
+      "source": "memory/2026-03-26.md",
+      "url": null
+    },
+    {
+      "id": 40,
+      "category": "intel",
+      "title": "【情报1】OpenAI宣布关停Sora，官宣代码+企业双线战略",
+      "body": "** 2026年3月24日，OpenAI宣布关停视频生成产品Sora。6个月生命周期内应用内购收入仅约210万美元。Altman在内部表示要\"将资源释放给下一代AI模型\"。OpenAI的新战略只剩两个关键词：**代码（Coding）和企业（Enterprise）**。同日迪士尼宣布终止与OpenAI的10亿美元投资协议。",
+      "date": "2026-03-26T08:00",
+      "priority": "high",
+      "tags": [
+        "情报",
+        "评分88"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3737905849958402"
+    },
+    {
+      "id": 41,
+      "category": "intel",
+      "title": "【情报2】Anthropic Cowork（\"龙虾\"）掀起企业AI浪潮，钉钉飞书企微争相接入",
+      "body": "** Anthropic发布桌面端Agent产品 **Cowork**（国内俗称\"龙虾\"），定位为面向非开发者的桌面代理工具，可处理表格、文件管理、报告生成等任务。4名工程师10天内完成开发，大部分代码由Claude Code编写。**发布后，全球SaaS板块一度蒸发约2万亿美元市值。**",
+      "date": "2026-03-26T08:00",
+      "priority": "high",
+      "tags": [
+        "情报",
+        "评分85"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3738175573999874"
+    },
+    {
+      "id": 42,
+      "category": "intel",
+      "title": "【情报3】ARC-AGI-3 发布，AGI评测进入新阶段",
+      "body": "** ARC Prize 发布 ARC-AGI-3 基准测试，Kaggle 竞赛页面已上线。ARC-AGI-1 → AGI-2 → AGI-3 的迭代升级标志 AGI 能力评估框架持续推进。AGI-3 在 Kaggle 已有排行榜，意味着新一轮竞赛开始。",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分76"
+      ],
+      "source": "侦察兵",
+      "url": "https://arcprize.org/arc-agi/3"
+    },
+    {
+      "id": 43,
+      "category": "intel",
+      "title": "【情报4】EvoClaw研究：AI Agent持续开发成功率仅13.37%",
+      "body": "** 顶校联合发布 EvoClaw 评估基准，测试 AI Agent 在真实软件持续开发场景中的表现。发现：单点修复AI得分>80%，但进入\"持续演进\"的真实开发场景，AI表现出现断崖式下跌（最高不到40%）。13.37%的成功率揭示AI距离真正替代长期软件开发仍有明显差距。",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分72"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3738221486096392"
+    },
+    {
+      "id": 44,
+      "category": "intel",
+      "title": "【情报5】Ensu - Ente发布本地LLM应用，主打完全离线+加密同步",
+      "body": "** Ente（知名隐私照片应用）发布 Ensu，定位：完全离线运行的本地LLM App，支持iOS/Android/macOS/Linux/Windows，开源，后续将支持E2EE跨设备同步。核心理念：\"LLMs are too important to be left to big tech\"。",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "情报",
+        "评分65"
+      ],
+      "source": "侦察兵",
+      "url": "https://ente.com/blog/ensu/"
+    },
+    {
+      "id": 45,
+      "category": "intel",
+      "title": "【情报6】Google TurboQuant - 极限量化压缩重新定义AI效率",
+      "body": "** Google Research 发布 TurboQuant，通过极限量化压缩技术大幅提升AI推理效率。HN 474pt/129c，技术社区关注度高。",
+      "date": "2026-03-26T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://research.google/blog/turboquant-redefining-ai-efficiency-with-extreme-compression/"
+    },
+    {
+      "id": 46,
+      "category": "intel",
+      "title": "【情报7】GitHub Copilot更新数据使用政策 - 用户数据权益争议",
+      "body": "** GitHub更新Copilot交互数据使用政策，引发开发者社区讨论（191pt/88c）。背景：AI代码工具数据训练争议持续发酵。",
+      "date": "2026-03-26T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分63"
+      ],
+      "source": "侦察兵",
+      "url": "https://github.blog/news-insights/company-news/updates-to-github-copilot-interaction-data-usage-policy/"
+    },
+    {
+      "id": 47,
+      "category": "intel",
+      "title": "【情报8】MiniMax估值3300亿，B端增长亮眼但盈利挑战大",
+      "body": "",
+      "date": "2026-03-26T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分55"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 73,
+      "category": "news",
+      "title": "06:00 爆款选题任务",
+      "body": "- 执行 cron:6f71c7fb 爆款选题挖掘 · - 搜索来源：tavily x3 queries（小红书/抖音/微博热点） · - 核心发现：活人感、AI工具教学、超级利基、00后颠覆传统、年轻人立遗嘱等方向爆火",
+      "date": "2026-03-26T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-26"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 18,
+      "category": "draft",
+      "title": "《说不清楚的人，正在被AI淘汰》",
+      "body": "AI吐出来一堆废话。没有重点，没有数据，像一篇高中生的作业。 他很生气，骂了一句\"AI就是个智障\"，然后自己熬了一夜，手搓了那份报告。 第二天，他隔壁工位的同事，用同一个工具，花了20分钟就搞出一份像模像样的报告，数据清楚、结论明确、老板直接拍板通过。 区别在哪？ 那个同事说了一句话：\"你得告诉它你要什么，不能说'帮我写个分析'，你得说'分析北京咖啡市场2025年Q4的增长趋势，重点关注客单价变化",
+      "date": "2026-03-25T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 19,
+      "category": "draft",
+      "title": "《说不清楚的人，正在被AI淘汰》",
+      "body": "AI吐出来一堆废话。没有重点，没有数据，像一篇高中生的作业。 他很生气，骂了一句\"AI就是个智障\"，然后自己熬了一夜，手搓了那份报告。 第二天，他隔壁工位的同事，用同一个工具，花了20分钟就搞出一份像模像样的报告，数据清楚、结论明确、老板直接拍板通过。 区别在哪？ 那个同事说了一句话：\"你得告诉它你要什么，不能说'帮我写个分析'，你得说'分析北京咖啡市场2025年Q4的增长趋势，重点关注客单价变化",
+      "date": "2026-03-25T09:00",
+      "priority": "mid",
+      "tags": [
+        "草稿",
+        "已审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 48,
+      "category": "intel",
+      "title": "OPC浪潮来了：中国政府和大厂全面入局\"一人公司\"",
+      "body": "",
+      "date": "2026-03-25T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3736816133390338)"
+    },
+    {
+      "id": 49,
+      "category": "intel",
+      "title": "ARM正式推出「AGI CPU」：专为AI Agent时代设计的芯片",
+      "body": "",
+      "date": "2026-03-25T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://newsroom.arm.com/blog/introducing-arm-agi-cpu)"
+    },
+    {
+      "id": 50,
+      "category": "intel",
+      "title": "Kimi被低估了？分析师：值得像研究DeepSeek一样严肃看待",
+      "body": "",
+      "date": "2026-03-25T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3736870910968065)"
+    },
+    {
+      "id": 51,
+      "category": "intel",
+      "title": "HN热议：LiteLLM 1.82.7/1.82.8 供应链攻击（凭证窃取）",
+      "body": "",
+      "date": "2026-03-25T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://github.com/BerriAI/litellm/issues/24512)"
+    },
+    {
+      "id": 52,
+      "category": "intel",
+      "title": "HN热议：有人厌倦了谈论AI（反思类内容走红）",
+      "body": "** 博主Jake Saunders写道：AI已成日常工具，但各平台充斥重复的AI工作流讨论，反而让真正的\"建造了什么\"淹没其中。文章本身具有反讽价值（用AI相关文章抱怨AI相关文章）。",
+      "date": "2026-03-25T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 74,
+      "category": "news",
+      "title": "08:00 AI简报 Cron 执行",
+      "body": "- 来源：HackerNews 实时抓取（search_by_date API） · - 覆盖：AI Agent 生态 + DeepSeek 最新动态 · - 5条简报已生成并推送 Telegram",
+      "date": "2026-03-25T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-25"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 20,
+      "category": "draft",
+      "title": "《小红书笔记 | 2026-03-24 | 董事长派单》",
+      "body": "我让AI看了我的账单，它建议我自首 上个月星巴克喝了14杯，AI说：这钱够买台咖啡机了，建议主动投案自首 ☕ 深夜刷到银行账单推送，越看越心虚。星巴克14笔、盲盒3单、外卖多到不敢数。 记账App倒是忠实记录了每一笔，但它只会告诉你\"本月餐饮支出2847元\"。冷冰冰一个数字，看完点个关闭，下个月照花不误 😐",
+      "date": "2026-03-24T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 21,
+      "category": "draft",
+      "title": "《你每天刷100条信息，能记住几条？》",
+      "body": "--- 昨晚睡前，一个朋友发了条消息：\"推荐个好课，讲认知升级的，特别牛。\" 问他牛在哪，他想了半天，说：\"就是……讲得特别有道理，但我一时想不起来具体说了啥。\" 这句话听着耳熟吧？因为几乎每个人都经历过。 公众号收藏了200篇\"干货\"，没打开过第二次。播客订了15个频道，每期都听，一周后全忘了。短视频划到凌晨一点，第二天能回忆起来的不超过3条，而且2条是搞笑的。",
+      "date": "2026-03-24T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 22,
+      "category": "draft",
+      "title": "《儿子的作文一直写不出来，直到我不再教他写作文》",
+      "body": "--- 晚上九点，书房。 小5坐在桌前，作文本摊开，题目写好了，笔搁在旁边。 十分钟过去，一个字没动。 不是在玩，也不是不想写。就是坐在那里，盯着格子纸，像面前不是一道作文题，而是一扇怎么也推不开的门。",
+      "date": "2026-03-24T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 23,
+      "category": "draft",
+      "title": "《陪12岁儿子学了半年，最大的发现是：问题出在我身上》",
+      "body": "--- 晚上九点，书房。 小5坐在桌前，语文练习册翻开着，笔搁在旁边。眼睛盯着题目，但那种盯法，不是在思考，是在发呆。 \"这道阅读理解你看了多久了？\" \"……快了。\"",
+      "date": "2026-03-24T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 53,
+      "category": "intel",
+      "title": "[情报-01] 微信上线 ClawBot 官方插件，正式接入 ACP 协议",
+      "body": "** 3月22日，微信低调上线「ClawBot」插件，无需配置API Key，直接在微信设置中启动，扫码绑定OpenClaw。基于ACP协议，理论上可调用Claude Code、Codex等任意Agent。这是微信10年来首次以官方插件形式集成第三方AI工具。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3735462766359041"
+    },
+    {
+      "id": 54,
+      "category": "intel",
+      "title": "[情报-02] AI Agent 永久记忆系统 ASMR 刷爆 SOTA，LongMemEval 99%",
+      "body": "** Supermemory 团队发布 ASMR 超级记忆系统，在业界最难AI记忆基准测试 LongMemEval 上拿下99%准确率。关键突破：抛弃向量数据库和Embedding，纯内存运行 + 多Agent并行推理架构（3个观察者+3个搜索Agent）。4月初开源。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3735328745816325"
+    },
+    {
+      "id": 55,
+      "category": "intel",
+      "title": "[情报-03] iPhone 17 Pro 本地跑通 400B 参数 LLM",
+      "body": "** HN TOP4（443分，9小时）。推特 @anemll 展示 iPhone 17 Pro 运行 400B 大模型，端侧AI能力大幅突破。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 56,
+      "category": "intel",
+      "title": "[情报-04] Tokenmaxxing：烧Token成KPI，工程师月烧15万美元",
+      "body": "** 硅谷新流行词\"Tokenmaxxing\"——Meta/OpenAI内部工程师比拼Token消耗量，最高周烧2100亿Token。阿里成立\"Alibaba Token Hub\"事业群，黄仁勋称Token是\"AI时代最值钱的大宗商品\"。Token正成为组织绩效KPI新指标。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://36kr.com/p/3735451247001602"
+    },
+    {
+      "id": 57,
+      "category": "intel",
+      "title": "[情报-05] Mozilla AI 发布 cq —— Agent 版 Stack Overflow（MCP服务器）",
+      "body": "** Mozilla AI 开源工具 cq，让AI Agent之间共享「踩坑知识」，避免每个Agent重复犯同样错误。支持Claude Code和OpenCode插件，内置MCP服务器管理本地知识库，支持团队级知识共享API。Stack Overflow已经被AI\"吃掉\"了（2025年12月仅3862个问题），这是它的AI原生继任者。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://blog.mozilla.ai/cq-stack-overflow-for-agents/"
+    },
+    {
+      "id": 58,
+      "category": "intel",
+      "title": "[情报-06] Claude Code 高效使用心法（HN 88分，2小时）",
+      "body": "** 工程师 Neil Kakkar 总结6周深度使用Claude Code的核心心法：①把自己变成\"Agent的经理\"而非实施者；②用/git-pr自动化PR流程；③SWC加速让构建<1秒；④Agent自我验证UI（不做人工瓶颈）；⑤worktree并发5个Agent同时工作。核心结论：基础设施>AI能力本身。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://neilkakkar.com/productive-with-claude-code.html"
+    },
+    {
+      "id": 59,
+      "category": "intel",
+      "title": "[情报-07] V2EX热帖：所有开发者晋升\"AI工程师\"",
+      "body": "** V2EX热帖（65回复）：老板要求所有开发人员职称改为AI工程师，引发广泛吐槽。反映AI工程师title通胀、实质性技能空心化问题。",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 60,
+      "category": "intel",
+      "title": "2026-03-24 | 定时情报抓取 | AI工具/IndieHacker/中国科技三方向",
+      "body": "",
+      "date": "2026-03-24T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 75,
+      "category": "news",
+      "title": "08:00 Cron - AI简报任务",
+      "body": "- 执行 AI Agent + DeepSeek 每日简报 · - 数据来源：HackerNews Algolia API（最近24-72h内容） · - 已推送到 Telegram",
+      "date": "2026-03-24T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-24"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 76,
+      "category": "news",
+      "title": "06:00 Cron - 爆款选题任务（实际执行于22:00）",
+      "body": "- 来源：HackerNews front page + 结合国内平台趋势判断 · - 输出5个选题，已通过cron投递",
+      "date": "2026-03-24T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-24"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 24,
+      "category": "draft",
+      "title": "《省下来的2小时，才是你真正的工资》",
+      "body": "--- 周五晚上，公司楼下的咖啡店。 一个朋友打开电脑，给我看他的副业收入截图：上个月，写了12篇产品测评，到账3600块。不多，但够覆盖每个月的车贷。 重点不是3600块，而是他说的下一句话：\"这些文章，从选题到初稿，平均每篇只花40分钟。\" 去年同样的活儿，他要花3个小时。选题半小时，查资料一小时，写初稿一小时，改稿半小时。现在呢？AI帮他查资料、整理框架、生成初稿，他只负责最后的润色和加入自",
+      "date": "2026-03-23T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 61,
+      "category": "intel",
+      "title": "【情报A1】Cursor自研 Composer 2.0：性能反超 Claude Opus 4.6，价格打一折",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 62,
+      "category": "intel",
+      "title": "【情报A2】HN热议：Flash-MoE — 笔记本上跑 3970 亿参数模型",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://github.com/danveloper/flash-moe"
+    },
+    {
+      "id": 63,
+      "category": "intel",
+      "title": "【情报A3】V2EX热帖：Claude Code 频繁封号，风控力度升级",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 64,
+      "category": "intel",
+      "title": "【情报B1】HN 热榜：版本控制的未来——Manyana",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://bramcohen.com/p/manyana"
+    },
+    {
+      "id": 65,
+      "category": "intel",
+      "title": "【情报B2】V2EX热帖：AI+副业实战案例——独立开发者多赛道尝试",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 66,
+      "category": "intel",
+      "title": "【情报B3】HN热议：如何让 AI Bot 爱上你的开源项目",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": "https://nesbitt.io/2026/03/21/how-to-attract-ai-bots-to-your-open-source-project.html"
+    },
+    {
+      "id": 67,
+      "category": "intel",
+      "title": "【情报C1】🔥 OpenAI 深陷四面楚歌：Anthropic 抢走70%新单，急扩3500人反击",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 68,
+      "category": "intel",
+      "title": "【情报C2】宇树科技IPO获受理：年收入17亿，人形机器人出货全球第一",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 69,
+      "category": "intel",
+      "title": "【情报C3】🔥 云计算集体涨价！阿里/百度/腾讯/AWS/谷歌云同步提价30%-400%",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 70,
+      "category": "intel",
+      "title": "【情报C4】马斯克官宣 TERAFAB：目标年产1太瓦算力芯片，冲刺II型文明",
+      "body": "",
+      "date": "2026-03-23T08:00",
+      "priority": "low",
+      "tags": [
+        "情报",
+        "评分60"
+      ],
+      "source": "侦察兵",
+      "url": null
+    },
+    {
+      "id": 77,
+      "category": "news",
+      "title": "08:00 AI简报任务执行",
+      "body": "- 来源：Wired、The Verge、Hacker News、Reuters · - 5条简报已生成：AI Agent越权挖矿、Gemini任务自动化上线、DeepSeek神秘新模型、Walmart/OpenAI商务合作重组、AI Agent安全攻击面警告",
+      "date": "2026-03-23T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-23"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 78,
+      "category": "news",
+      "title": "06:00 爆款选题任务执行（cron 6f71c7fb，实际运行于22:00 UTC）",
+      "body": "- 数据来源：百度热搜实时榜（20条），结合小红书/微博内容生态分析 · - 核心热点：沃柑降价、运动健脑研究证实、开灯睡觉变胖、假装上班经济、外企涌入中国 · - 5个选题已输出，覆盖健康/生活/职场/消费/经济赛道",
+      "date": "2026-03-23T08:00",
+      "priority": "mid",
+      "tags": [
+        "简报",
+        "2026-03-23"
+      ],
+      "source": "猫巴士",
+      "url": null
+    },
+    {
+      "id": 25,
+      "category": "draft",
+      "title": "《别什么都问AI，有些问题只有你自己能回答》",
+      "body": "不是说用AI不好。恰恰相反，该用就用，能省的力气别硬扛。但有一类问题，AI永远替不了你。 **什么事让你开心？** **什么人值得你花时间？** **接下来这三年，你到底想过什么样的日子？** 这些问题没有标准答案。ChatGPT可以给你一个看起来很周全的回复，甚至帮你列个\"人生规划表格\"。但说实话，那张表格跟你没有半毛钱关系。因为它不知道你妈最近身体不好，不知道你上个月跟最好的朋友闹翻了，不知道",
+      "date": "2026-03-22T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    },
+    {
+      "id": 26,
+      "category": "draft",
+      "title": "《你被算法喂养了多久，自己知道吗？》",
+      "body": "--- 晚上十一点，躺在床上刷手机。 本来只想看一眼明天的天气，结果刷到一条视频，\"教你三天学会Python\"。不知道为什么就点了进去。然后又蹦出来一条，\"35岁程序员被裁后开了家面馆\"。再然后是\"月薪5万的副业推荐\"。 抬头看时间，凌晨一点。 两个小时，喂进去了几十条信息，没有一条是自己主动想看的。全是算法觉得\"你可能感兴趣\"。",
+      "date": "2026-03-21T09:00",
+      "priority": "low",
+      "tags": [
+        "草稿",
+        "待审核"
+      ],
+      "source": "笔杆子",
+      "url": null
+    }
+  ],
+  "agents": [
+    {
+      "name": "猫巴士",
+      "role": "总调度",
+      "status": "在线"
+    },
+    {
+      "name": "笔杆子",
+      "role": "写作",
+      "status": "在线"
+    },
+    {
+      "name": "算盘",
+      "role": "分析",
+      "status": "在线"
+    },
+    {
+      "name": "侦察兵",
+      "role": "情报",
+      "status": "在线"
+    },
+    {
+      "name": "视觉师",
+      "role": "设计",
+      "status": "在线"
+    },
+    {
+      "name": "图书管理员",
+      "role": "归档",
+      "status": "在线"
+    },
+    {
+      "name": "知乎专员",
+      "role": "知乎",
+      "status": "在线"
+    }
+  ]
+}
