@@ -320,7 +320,16 @@ async function init() {
     const res = await fetch('data.json?t=' + Date.now());
     const data = await res.json();
     allItems = data.items || [];
-    window._articlesData = data.articles || {};
+    // 合并 draft_status 台账 + items 里 type=draft 的条目
+    const _statusMap = {};
+    (data.articles?.articles || []).forEach(a => { _statusMap[a.title] = a; });
+    // 把 feed 里 type=draft 的条目补入（未在台账则默认 pending_review）
+    (data.items || []).filter(i => i.category === 'draft').forEach(i => {
+      if (!_statusMap[i.title]) {
+        _statusMap[i.title] = { title: i.title, status: 'pending_review', updated_at: (i.date || '').slice(0,10) };
+      }
+    });
+    window._articlesData = { articles: Object.values(_statusMap) };
     renderArticlePanel();
     document.getElementById('updatedAt').textContent = '更新于 ' + (data.updatedAt || '--');
     render();
