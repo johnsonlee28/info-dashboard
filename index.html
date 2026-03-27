@@ -166,31 +166,33 @@
   }
 
   /* === 文章状态面板 === */
-  .article-panel { padding: 20px 24px; }
-  .article-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 12px; margin-bottom: 20px; }
-  .art-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; text-align: center; cursor: pointer; transition: border-color .15s; }
-  .art-stat:hover, .art-stat.active { border-color: var(--accent); }
-  .art-stat .n { font-size: 26px; font-weight: 700; }
-  .art-stat .lb { font-size: 12px; color: var(--muted); margin-top: 2px; }
-  .art-stat.pending .n { color: var(--yellow); }
+  #article-panel { background: var(--bg); }
+  .article-panel { max-width: 800px; margin: 0 auto; padding: 20px 16px; }
+  .article-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-bottom: 20px; }
+  .art-stat { background: var(--surface); border: 1px solid var(--border); border-radius: 12px; padding: 16px 12px; text-align: center; cursor: pointer; transition: border-color .15s, box-shadow .15s; }
+  .art-stat:hover, .art-stat.active { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+  .art-stat .n { font-size: 32px; font-weight: 700; line-height: 1; }
+  .art-stat .lb { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  .art-stat.pending .n  { color: var(--yellow); }
   .art-stat.reviewed .n { color: var(--green); }
-  .art-stat.published .n { color: var(--accent2); }
-  .art-filter-bar { display: flex; gap: 8px; margin-bottom: 14px; flex-wrap: wrap; }
-  .art-filter-btn { padding: 4px 14px; border-radius: 16px; border: 1px solid var(--border); background: transparent; color: var(--muted); font-size: 13px; cursor: pointer; transition: all .15s; }
-  .art-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; }
-  .art-search { width: 100%; padding: 9px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14px; margin-bottom: 14px; outline: none; }
+  .art-stat.published .n{ color: var(--accent2); }
+  .art-filter-bar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+  .art-filter-btn { padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border); background: transparent; color: var(--muted); font-size: 13px; cursor: pointer; transition: all .15s; white-space: nowrap; }
+  .art-filter-btn.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  .art-search { width: 100%; padding: 10px 14px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface); color: var(--text); font-size: 14px; margin-bottom: 14px; outline: none; box-sizing: border-box; }
   .art-search:focus { border-color: var(--accent); }
-  .art-table { background: var(--surface); border-radius: 10px; overflow: hidden; border: 1px solid var(--border); }
-  .art-table table { width: 100%; border-collapse: collapse; }
-  .art-table th { padding: 10px 14px; font-size: 11px; color: var(--muted); text-align: left; border-bottom: 1px solid var(--border); text-transform: uppercase; letter-spacing: .5px; }
-  .art-table td { padding: 12px 14px; font-size: 14px; border-bottom: 1px solid var(--surface2); }
-  .art-table tr:last-child td { border-bottom: none; }
-  .art-table tr:hover td { background: var(--surface2); }
-  .art-badge { display: inline-flex; align-items: center; gap: 4px; padding: 2px 9px; border-radius: 12px; font-size: 12px; font-weight: 500; }
+  /* 卡片式列表，手机友好 */
+  .art-list { display: flex; flex-direction: column; gap: 8px; }
+  .art-card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 14px 16px; display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+  .art-card:hover { border-color: var(--accent); }
+  .art-card-title { font-size: 14px; font-weight: 500; line-height: 1.5; flex: 1; word-break: break-all; }
+  .art-card-meta { display: flex; flex-direction: column; align-items: flex-end; gap: 6px; flex-shrink: 0; }
+  .art-badge { display: inline-flex; align-items: center; gap: 4px; padding: 3px 10px; border-radius: 12px; font-size: 12px; font-weight: 500; white-space: nowrap; }
   .art-badge.pending  { background: rgba(240,180,41,.15); color: var(--yellow); }
   .art-badge.reviewed { background: rgba(76,175,136,.15); color: var(--green); }
-  .art-badge.published { background: rgba(91,164,245,.15); color: var(--accent2); }
-  .art-empty { text-align: center; padding: 36px; color: var(--muted); font-size: 14px; }
+  .art-badge.published{ background: rgba(91,164,245,.15); color: var(--accent2); }
+  .art-date { font-size: 12px; color: var(--muted); }
+  .art-empty { text-align: center; padding: 40px; color: var(--muted); font-size: 14px; }
 
 </style>
 </head>
@@ -224,7 +226,7 @@
   <button class="filter-btn" data-filter="articles" onclick="setFilter('articles',this)">📋 文章</button>
 </div>
 
-<div class="main"><div id="article-panel" style="display:none;flex:1;overflow-y:auto;">
+<div class="main"><div id="article-panel" style="display:none;width:100%;overflow-y:auto;">
   <div class="article-panel">
     <div class="article-stats">
       <div class="art-stat pending" id="art-card-pending" onclick="artFilter('pending_review')">
@@ -244,12 +246,7 @@
       <button class="art-filter-btn" id="artbtn-published" onclick="artFilter('published')">🚀 已发布</button>
     </div>
     <input class="art-search" id="art-search" placeholder="搜索文章标题…" oninput="renderArticles()">
-    <div class="art-table">
-      <table>
-        <thead><tr><th>文章标题</th><th>状态</th><th>更新日期</th></tr></thead>
-        <tbody id="art-tbody"></tbody>
-      </table>
-    </div>
+    <div class="art-list" id="art-list"></div>
   </div>
 </div>
   <div class="sidebar">
@@ -650,15 +647,18 @@ function renderArticles() {
   };
   const tbody = document.getElementById('art-tbody');
   if (!list.length) {
-    tbody.innerHTML = '<tr><td colspan="3"><div class="art-empty">暂无文章</div></td></tr>';
+    document.getElementById('art-list').innerHTML = '<div class="art-empty">暂无文章</div>';
     return;
   }
-  tbody.innerHTML = list.map(a => `
-    <tr>
-      <td>《${escHtml(a.title)}》</td>
-      <td>${BADGE[a.status] || a.status}</td>
-      <td style="color:var(--muted);font-size:13px">${a.updated_at || '-'}</td>
-    </tr>
+  const listEl = document.getElementById('art-list');
+  listEl.innerHTML = list.map(a => `
+    <div class="art-card">
+      <div class="art-card-title">《${escHtml(a.title)}》</div>
+      <div class="art-card-meta">
+        ${BADGE[a.status] || a.status}
+        <span class="art-date">${a.updated_at || '-'}</span>
+      </div>
+    </div>
   `).join('');
 }
 // ===========================
