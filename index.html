@@ -211,7 +211,20 @@
 </div>
 
 
-<div id="article-panel" style="display:none">
+
+<div class="filters">
+  <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">全部</button>
+  <button class="filter-btn" data-filter="intel" onclick="setFilter('intel',this)">📰 情报</button>
+  <button class="filter-btn" data-filter="idea" onclick="setFilter('idea',this)">💡 创意</button>
+  <button class="filter-btn" data-filter="draft" onclick="setFilter('draft',this)">📝 草稿</button>
+  <button class="filter-btn" data-filter="todo" onclick="setFilter('todo',this)">✅ 待办</button>
+  <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">🤖 简报</button>
+  <button class="filter-btn" data-filter="market" onclick="setFilter('market',this)">📊 市场</button>
+  <button class="filter-btn" data-filter="image" onclick="setFilter('image',this)">🖼 图库</button>
+  <button class="filter-btn" data-filter="articles" onclick="setFilter('articles',this)">📋 文章</button>
+</div>
+
+<div class="main"><div id="article-panel" style="display:none;flex:1;overflow-y:auto;">
   <div class="article-panel">
     <div class="article-stats">
       <div class="art-stat pending" id="art-card-pending" onclick="artFilter('pending_review')">
@@ -239,20 +252,6 @@
     </div>
   </div>
 </div>
-
-<div class="filters">
-  <button class="filter-btn active" data-filter="all" onclick="setFilter('all',this)">全部</button>
-  <button class="filter-btn" data-filter="intel" onclick="setFilter('intel',this)">📰 情报</button>
-  <button class="filter-btn" data-filter="idea" onclick="setFilter('idea',this)">💡 创意</button>
-  <button class="filter-btn" data-filter="draft" onclick="setFilter('draft',this)">📝 草稿</button>
-  <button class="filter-btn" data-filter="todo" onclick="setFilter('todo',this)">✅ 待办</button>
-  <button class="filter-btn" data-filter="news" onclick="setFilter('news',this)">🤖 简报</button>
-  <button class="filter-btn" data-filter="market" onclick="setFilter('market',this)">📊 市场</button>
-  <button class="filter-btn" data-filter="image" onclick="setFilter('image',this)">🖼 图库</button>
-  <button class="filter-btn" data-filter="articles" onclick="setFilter('articles',this)">📋 文章</button>
-</div>
-
-<div class="main">
   <div class="sidebar">
     <div class="sidebar-section">
       <div class="sidebar-title">今日概览</div>
@@ -342,7 +341,7 @@ function setFilter(f, btn) {
   if (f === 'articles') {
     ap.style.display = 'block';
     feed.style.display = 'none';
-    if (sidebar) sidebar.style.display = 'none';
+    document.querySelectorAll('.sidebar, #feed').forEach(el => el.style.display = 'none');
     document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
     if (btn) btn.classList.add('active');
     renderArticles();
@@ -350,7 +349,7 @@ function setFilter(f, btn) {
   } else {
     ap.style.display = 'none';
     feed.style.display = 'block';
-    if (sidebar) sidebar.style.display = '';
+    document.querySelectorAll('.sidebar, #feed').forEach(el => el.style.display = '');
   }
   currentFilter = f;
   currentTag = null;
@@ -663,6 +662,23 @@ function renderArticles() {
   `).join('');
 }
 // ===========================
+
+
+function fmtBody(str) {
+  if (!str) return '';
+  // 将 " · – " 或 " – " 分隔的条目换行，每条前加 · 
+  // 支持格式：A · – B · – C  或  – A · – B
+  let s = str;
+  // 先把 " · – " 统一成换行符
+  s = s.replace(/ [·•] [–—-] /g, '\n');
+  // 开头的 "– " 也去掉
+  s = s.replace(/^[–—-] /, '');
+  // 剩余的独立 " – " 也换行
+  s = s.replace(/ [–—-] /g, '\n');
+  const lines = s.split('\n').map(l => l.trim()).filter(Boolean);
+  if (lines.length <= 1) return escHtml(str);
+  return lines.map((l,i) => (i===0 ? '' : '· ') + escHtml(l)).join('<br>');
+}
 
 function escHtml(str) {
   return (str||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
