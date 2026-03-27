@@ -208,7 +208,7 @@
   </div>
   <div class="header-right">
     <span class="updated" id="updatedAt">加载中...</span>
-    <button class="refresh-btn" onclick="init()">🔄 刷新</button>
+    <button class="refresh-btn" id="refreshBtn" onclick="doRefresh()">🔄 刷新</button>
   </div>
 </div>
 
@@ -314,6 +314,13 @@ const CAT_MAP = {
   market: { label: '市场',  icon: '📊', cls: 'cat-market' },
   image:  { label: '图片',  icon: '🖼', cls: 'cat-image' },
 };
+
+async function doRefresh() {
+  const btn = document.getElementById('refreshBtn');
+  if (btn) { btn.textContent = '⏳ 刷新中…'; btn.disabled = true; }
+  await init();
+  if (btn) { btn.textContent = '🔄 刷新'; btn.disabled = false; }
+}
 
 async function init() {
   try {
