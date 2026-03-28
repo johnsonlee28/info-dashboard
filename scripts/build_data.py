@@ -227,8 +227,18 @@ def load_market():
 # ─── 图片库（Designer 生成图片）─────────────────────────────────────
 def load_images():
     img_dir = f"{WORKSPACE}/info-dashboard/images/designer"
-    if not os.path.exists(img_dir):
-        return
+    os.makedirs(img_dir, exist_ok=True)
+    # 自动同步 bots/designer/ 里的新图
+    bots_dir = f"{WORKSPACE}/bots/designer"
+    if os.path.exists(bots_dir):
+        exts_set = {".png", ".jpg", ".jpeg", ".webp"}
+        for fname in os.listdir(bots_dir):
+            if os.path.splitext(fname)[1].lower() in exts_set:
+                src = os.path.join(bots_dir, fname)
+                dst = os.path.join(img_dir, fname)
+                if not os.path.exists(dst):
+                    import shutil
+                    shutil.copy2(src, dst)
     exts = (".png", ".jpg", ".jpeg", ".webp")
     files = sorted(
         [f for f in os.listdir(img_dir) if f.lower().endswith(exts)],
