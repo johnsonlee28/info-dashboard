@@ -876,19 +876,6 @@
       "url": null
     },
     {
-      "id": 10,
-      "category": "todo",
-      "title": "Scout下次情报收集改用Tavily（需更新Scout工作流）",
-      "body": "",
-      "date": "2026-03-26T08:00",
-      "priority": "mid",
-      "tags": [
-        "待办"
-      ],
-      "source": "memory/2026-03-26.md",
-      "url": null
-    },
-    {
       "id": 42,
       "category": "intel",
       "title": "【情报1】OpenAI宣布关停Sora，官宣代码+企业双线战略",
