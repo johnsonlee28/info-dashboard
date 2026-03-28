@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-03-28 16:55 GMT+8",
+  "updatedAt": "2026-03-28 16:57 GMT+8",
   "total": 127,
   "items": [
     {
@@ -328,7 +328,7 @@
       "id": 102,
       "category": "image",
       "title": "cover alt B",
-      "body": "cover-alt-B.png",
+      "body": "cover-alt-B.webp",
       "date": "2026-03-28T00:00",
       "priority": "low",
       "tags": [
@@ -336,7 +336,7 @@
         "Designer"
       ],
       "source": "Designer",
-      "url": "/images/designer/cover-alt-B.png"
+      "url": "/images/designer/cover-alt-B.webp"
     },
     {
       "id": 103,
@@ -356,7 +356,7 @@
       "id": 104,
       "category": "image",
       "title": "cover alt A",
-      "body": "cover-alt-A.png",
+      "body": "cover-alt-A.webp",
       "date": "2026-03-28T00:00",
       "priority": "low",
       "tags": [
@@ -364,7 +364,7 @@
         "Designer"
       ],
       "source": "Designer",
-      "url": "/images/designer/cover-alt-A.png"
+      "url": "/images/designer/cover-alt-A.webp"
     },
     {
       "id": 105,
@@ -384,7 +384,7 @@
       "id": 106,
       "category": "image",
       "title": "elderly standup guide",
-      "body": "2026-03-28-elderly-standup-guide.png",
+      "body": "2026-03-28-elderly-standup-guide.webp",
       "date": "2026-03-28T00:00",
       "priority": "low",
       "tags": [
@@ -392,13 +392,13 @@
         "Designer"
       ],
       "source": "Designer",
-      "url": "/images/designer/2026-03-28-elderly-standup-guide.png"
+      "url": "/images/designer/2026-03-28-elderly-standup-guide.webp"
     },
     {
       "id": 107,
       "category": "image",
       "title": "elderly standup guide cn",
-      "body": "2026-03-28-elderly-standup-guide-cn.png",
+      "body": "2026-03-28-elderly-standup-guide-cn.webp",
       "date": "2026-03-28T00:00",
       "priority": "low",
       "tags": [
@@ -406,13 +406,13 @@
         "Designer"
       ],
       "source": "Designer",
-      "url": "/images/designer/2026-03-28-elderly-standup-guide-cn.png"
+      "url": "/images/designer/2026-03-28-elderly-standup-guide-cn.webp"
     },
     {
       "id": 108,
       "category": "image",
       "title": "crayfish info overload 900x500",
-      "body": "2026-03-28-crayfish-info-overload-900x500.png",
+      "body": "2026-03-28-crayfish-info-overload-900x500.webp",
       "date": "2026-03-28T00:00",
       "priority": "low",
       "tags": [
@@ -420,13 +420,13 @@
         "Designer"
       ],
       "source": "Designer",
-      "url": "/images/designer/2026-03-28-crayfish-info-overload-900x500.png"
+      "url": "/images/designer/2026-03-28-crayfish-info-overload-900x500.webp"
     },
     {
       "id": 109,
       "category": "image",
       "title": "crayfish info overload 16x9",
-      "body": "2026-03-28-crayfish-info-overload-16x9.png",
+      "body": "2026-03-28-crayfish-info-overload-16x9.webp",
       "date": "2026-03-28T00:00",
       "priority": "low",
       "tags": [
@@ -434,7 +434,7 @@
         "Designer"
       ],
       "source": "Designer",
-      "url": "/images/designer/2026-03-28-crayfish-info-overload-16x9.png"
+      "url": "/images/designer/2026-03-28-crayfish-info-overload-16x9.webp"
     },
     {
       "id": 13,
