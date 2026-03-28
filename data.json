@@ -1,6 +1,6 @@
 {
-  "updatedAt": "2026-03-28 16:53 GMT+8",
-  "total": 121,
+  "updatedAt": "2026-03-28 16:55 GMT+8",
+  "total": 127,
   "items": [
     {
       "id": 11,
@@ -59,7 +59,7 @@
       "url": null
     },
     {
-      "id": 121,
+      "id": 127,
       "category": "market",
       "title": "BTC 链上数据快照",
       "body": "资金费率：-- | 稳定币趋势：-- | 数据时间：2026-03-28",
@@ -341,6 +341,20 @@
     {
       "id": 103,
       "category": "image",
+      "title": "cover alt B raw",
+      "body": "cover-alt-B-raw.png",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "图片",
+        "Designer"
+      ],
+      "source": "Designer",
+      "url": "/images/designer/cover-alt-B-raw.png"
+    },
+    {
+      "id": 104,
+      "category": "image",
       "title": "cover alt A",
       "body": "cover-alt-A.png",
       "date": "2026-03-28T00:00",
@@ -351,6 +365,76 @@
       ],
       "source": "Designer",
       "url": "/images/designer/cover-alt-A.png"
+    },
+    {
+      "id": 105,
+      "category": "image",
+      "title": "cover alt A raw",
+      "body": "cover-alt-A-raw.png",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "图片",
+        "Designer"
+      ],
+      "source": "Designer",
+      "url": "/images/designer/cover-alt-A-raw.png"
+    },
+    {
+      "id": 106,
+      "category": "image",
+      "title": "elderly standup guide",
+      "body": "2026-03-28-elderly-standup-guide.png",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "图片",
+        "Designer"
+      ],
+      "source": "Designer",
+      "url": "/images/designer/2026-03-28-elderly-standup-guide.png"
+    },
+    {
+      "id": 107,
+      "category": "image",
+      "title": "elderly standup guide cn",
+      "body": "2026-03-28-elderly-standup-guide-cn.png",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "图片",
+        "Designer"
+      ],
+      "source": "Designer",
+      "url": "/images/designer/2026-03-28-elderly-standup-guide-cn.png"
+    },
+    {
+      "id": 108,
+      "category": "image",
+      "title": "crayfish info overload 900x500",
+      "body": "2026-03-28-crayfish-info-overload-900x500.png",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "图片",
+        "Designer"
+      ],
+      "source": "Designer",
+      "url": "/images/designer/2026-03-28-crayfish-info-overload-900x500.png"
+    },
+    {
+      "id": 109,
+      "category": "image",
+      "title": "crayfish info overload 16x9",
+      "body": "2026-03-28-crayfish-info-overload-16x9.png",
+      "date": "2026-03-28T00:00",
+      "priority": "low",
+      "tags": [
+        "图片",
+        "Designer"
+      ],
+      "source": "Designer",
+      "url": "/images/designer/2026-03-28-crayfish-info-overload-16x9.png"
     },
     {
       "id": 13,
@@ -931,7 +1015,7 @@
       "url": null
     },
     {
-      "id": 104,
+      "id": 110,
       "category": "image",
       "title": "test image",
       "body": "2026-03-26-test-image.png",
@@ -945,7 +1029,7 @@
       "url": "/images/designer/2026-03-26-test-image.png"
     },
     {
-      "id": 105,
+      "id": 111,
       "category": "image",
       "title": "openclaw dispatch fail",
       "body": "2026-03-26-openclaw-dispatch-fail.png",
@@ -959,7 +1043,7 @@
       "url": "/images/designer/2026-03-26-openclaw-dispatch-fail.png"
     },
     {
-      "id": 106,
+      "id": 112,
       "category": "image",
       "title": "openclaw dispatch fail cover900x500",
       "body": "2026-03-26-openclaw-dispatch-fail-cover900x500.png",
@@ -973,7 +1057,7 @@
       "url": "/images/designer/2026-03-26-openclaw-dispatch-fail-cover900x500.png"
     },
     {
-      "id": 107,
+      "id": 113,
       "category": "image",
       "title": "openclaw dispatch fail cover",
       "body": "2026-03-26-openclaw-dispatch-fail-cover.png",
@@ -987,7 +1071,7 @@
       "url": "/images/designer/2026-03-26-openclaw-dispatch-fail-cover.png"
     },
     {
-      "id": 108,
+      "id": 114,
       "category": "image",
       "title": "45 crayfish comic",
       "body": "2026-03-26-20-45-crayfish-comic.png",
@@ -1001,7 +1085,7 @@
       "url": "/images/designer/2026-03-26-20-45-crayfish-comic.png"
     },
     {
-      "id": 109,
+      "id": 115,
       "category": "image",
       "title": "40 crayfish cover",
       "body": "2026-03-26-20-40-crayfish-cover.png",
@@ -1519,7 +1603,7 @@
       "url": null
     },
     {
-      "id": 110,
+      "id": 116,
       "category": "image",
       "title": "horse",
       "body": "2026-03-22-horse.png",
@@ -1533,7 +1617,7 @@
       "url": "/images/designer/2026-03-22-horse.png"
     },
     {
-      "id": 111,
+      "id": 117,
       "category": "image",
       "title": "ai dumbing",
       "body": "2026-03-22-ai-dumbing.png",
@@ -1547,7 +1631,7 @@
       "url": "/images/designer/2026-03-22-ai-dumbing.png"
     },
     {
-      "id": 112,
+      "id": 118,
       "category": "image",
       "title": "ai dumbing cover v2",
       "body": "2026-03-22-ai-dumbing-cover-v2.png",
@@ -1561,7 +1645,7 @@
       "url": "/images/designer/2026-03-22-ai-dumbing-cover-v2.png"
     },
     {
-      "id": 113,
+      "id": 119,
       "category": "image",
       "title": "ai dumbing child",
       "body": "2026-03-22-ai-dumbing-child.png",
@@ -1575,7 +1659,7 @@
       "url": "/images/designer/2026-03-22-ai-dumbing-child.png"
     },
     {
-      "id": 114,
+      "id": 120,
       "category": "image",
       "title": "ai dumbing child v2",
       "body": "2026-03-22-ai-dumbing-child-v2.png",
@@ -1603,7 +1687,7 @@
       "url": null
     },
     {
-      "id": 115,
+      "id": 121,
       "category": "image",
       "title": "dragon",
       "body": "2026-03-21-dragon.png",
@@ -1617,7 +1701,7 @@
       "url": "/images/designer/2026-03-21-dragon.png"
     },
     {
-      "id": 116,
+      "id": 122,
       "category": "image",
       "title": "15 elephant",
       "body": "2026-03-21-23-15-elephant.png",
@@ -1631,7 +1715,7 @@
       "url": "/images/designer/2026-03-21-23-15-elephant.png"
     },
     {
-      "id": 117,
+      "id": 123,
       "category": "image",
       "title": "08 00 designer cover final",
       "body": "2026-03-14-17-08-00-designer-cover-final.png",
@@ -1645,7 +1729,7 @@
       "url": "/images/designer/2026-03-14-17-08-00-designer-cover-final.png"
     },
     {
-      "id": 118,
+      "id": 124,
       "category": "image",
       "title": "06 00 designer cover draft",
       "body": "2026-03-14-17-06-00-designer-cover-draft.png",
@@ -1659,7 +1743,7 @@
       "url": "/images/designer/2026-03-14-17-06-00-designer-cover-draft.png"
     },
     {
-      "id": 119,
+      "id": 125,
       "category": "image",
       "title": "08 00 wechat cover draft",
       "body": "2026-03-14-15-08-00-wechat-cover-draft.png",
@@ -1673,7 +1757,7 @@
       "url": "/images/designer/2026-03-14-15-08-00-wechat-cover-draft.png"
     },
     {
-      "id": 120,
+      "id": 126,
       "category": "image",
       "title": "56 cat sunglasses",
       "body": "2026-02-22-17-56-cat-sunglasses.png",
